@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 32px;
+
+  &__title {
+    padding: 12px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    cursor: pointer;
+    padding: 12px;
+
+    & + & {
+      margin-left: 24px;
+    }
+  }
+}
