@@ -2,9 +2,12 @@
   display: flex;
   justify-content: space-between;
   padding: 24px 32px;
+  font-size: 20px;
 
   &__title {
     padding: 12px;
+    font-size: 24px;
+    font-weight: 600;
   }
 
   &__nav {
@@ -19,5 +22,9 @@
     & + & {
       margin-left: 24px;
     }
+  }
+
+  a:nth-last-child(2) {
+    margin-right: 24px;
   }
 }
