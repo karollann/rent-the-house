@@ -1,0 +1,28 @@
+.about {
+  display: flex;
+
+  flex-direction: column;
+  padding: 64px;
+
+  &__section {
+    display: flex;
+
+    &:not(:last-of-type) {
+      padding-bottom: 48px;
+    }
+  }
+
+  &__image {
+    width: 500px;
+    height: auto;
+    border-radius: 32px;
+  }
+
+  &__container {
+    padding: 24px;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+}
