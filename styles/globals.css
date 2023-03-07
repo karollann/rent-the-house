@@ -1,4 +1,6 @@
 :root {
+  --border-radius: 12px;
+  --color-secondary: rgb(34, 34, 34);
 }
 
 * {
@@ -20,7 +22,7 @@ a {
 
 .container {
   background-color: white;
-  box-shadow: var(--shadow);
-  color: var(--color-dark);
+  /* box-shadow: var(--shadow);
+  color: var(--color-dark); */
   margin: 0 auto;
 }

@@ -11,6 +11,9 @@ export const Header = () => {
           About
         </a>
         <a href="#" className={styles.header__link}>
+          Amenities
+        </a>
+        <a href="#" className={styles.header__link}>
           Rates
         </a>
         <a href="#" className={styles.header__link}>

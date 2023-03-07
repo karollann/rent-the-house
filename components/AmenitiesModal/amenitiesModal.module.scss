@@ -1,0 +1,72 @@
+// @use "../../styles/variables.scss";
+
+.modal {
+  &__body--open {
+    overflow: hidden;
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  &__content {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 40px;
+    border: 1px solid #ccc;
+    width: 800px;
+    background-color: #fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 24px;
+    outline: none;
+    padding: 0 24px 24px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.modalHeader {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 24px 0;
+}
+
+.modalTitle {
+  font-size: 32px;
+  padding: 24px 0;
+}
+
+.amenityGroupContainer {
+  display: flex;
+  // flex-direction: column;
+
+  &__heading {
+    font-size: 24px;
+    padding: 24px 0;
+  }
+}
+
+.amenityCard {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: solid;
+  border-color: #ccc;
+  border-width: 0.25px;
+
+  &__name {
+    padding-left: 12px;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-secondary);
+  }
+}

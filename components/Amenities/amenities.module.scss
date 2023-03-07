@@ -1,0 +1,57 @@
+.amenities {
+  padding: 0px 64px;
+  &__heading {
+    padding: 24px;
+    font-size: 32px;
+  }
+
+  &__primaryAmenities {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 24px;
+  }
+
+  &__highlitedAmenities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 24px;
+  }
+
+  &__text {
+    font-size: 24px;
+    padding-bottom: 24px;
+  }
+
+  &__roomsHeading {
+    font-size: 32px;
+    padding-bottom: 24px;
+  }
+
+  &__displayFirst {
+    padding: 24px 0;
+  }
+
+  &__displayFirstHeading {
+    font-size: 32px;
+    padding-bottom: 24px;
+  }
+
+  &__displayFirstList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.amenityCard {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  // padding-left: 16px;
+
+  &__name {
+    padding-left: 12px;
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
