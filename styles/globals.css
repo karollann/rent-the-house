@@ -1,6 +1,7 @@
 :root {
   --border-radius: 12px;
   --color-secondary: rgb(34, 34, 34);
+  --color-showMoreButtonBg: rgb(247, 247, 247);
 }
 
 * {

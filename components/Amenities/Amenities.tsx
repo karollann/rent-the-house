@@ -4,6 +4,8 @@ import { primaryAmenityCardData } from "../../data";
 import { AmenitiesModal } from "../AmenitiesModal/AmenitiesModal";
 import { ReactElement, ReactNode, SVGProps, useState } from "react";
 import { HighlightedAmenity } from "../HighlightedAmenity/HighlightedAmenity";
+import { ShowMoreButton } from "../../components/ShowMoreButton/ShowMoreButton";
+
 import style from "./amenities.module.scss";
 
 type AmenitiesArr = {
@@ -15,6 +17,7 @@ type AmenitiesArr = {
 
 export const Amenities = () => {
   const allAmenities: AmenitiesArr = Object.values(amenityCardData).flat();
+
   const primaryAmenities: AmenitiesArr = Object.values(
     primaryAmenityCardData
   ).flat();
@@ -92,7 +95,11 @@ export const Amenities = () => {
             />
           ))}
         </ul>
-        <button onClick={() => setIsOpen(true)}>Show more</button>
+        <ShowMoreButton
+          open={() => setIsOpen(true)}
+          numberOfItems={allAmenities.length}
+          item="amenities"
+        />
       </div>
       <AmenitiesModal
         modalIsOpen={modalIsOpen}
