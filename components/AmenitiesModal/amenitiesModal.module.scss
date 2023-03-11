@@ -43,6 +43,7 @@
 .modalTitle {
   font-size: 32px;
   padding: 24px 0;
+  color: var(--color-secondary);
 }
 
 .amenityGroupContainer {
@@ -52,6 +53,7 @@
   &__heading {
     font-size: 24px;
     padding: 24px 0;
+    color: var(--color-secondary);
   }
 }
 

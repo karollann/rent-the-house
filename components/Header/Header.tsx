@@ -2,9 +2,15 @@ import { BookButton } from "../BookButton/BookButton";
 
 import styles from "./header.module.scss";
 
-export const Header = () => {
+type HeaderPropsType = { isAboutInView: boolean };
+
+export const Header = ({ isAboutInView }: HeaderPropsType) => {
+  const classes = !isAboutInView
+    ? `${styles.header} ${styles.header__headerSticky}`
+    : `${styles.header}`;
+
   return (
-    <header className={styles.header}>
+    <header className={classes}>
       <p className={styles.header__title}>Getaway Lodge</p>
       <nav className={styles.header__nav}>
         <a href="#" className={styles.header__link}>

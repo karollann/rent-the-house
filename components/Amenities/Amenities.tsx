@@ -5,6 +5,7 @@ import { AmenitiesModal } from "../AmenitiesModal/AmenitiesModal";
 import { ReactElement, ReactNode, SVGProps, useState } from "react";
 import { HighlightedAmenity } from "../HighlightedAmenity/HighlightedAmenity";
 import { ShowMoreButton } from "../../components/ShowMoreButton/ShowMoreButton";
+import { Slider } from "@/components/Carousel/Carousel";
 
 import style from "./amenities.module.scss";
 
@@ -79,8 +80,10 @@ export const Amenities = () => {
         ))}
       </div>
       <div className={style.amenities__roomsContainer}>
-        <h3 className={style.amenities__roomsHeading}>Rooms</h3>
-        <p>Carousel</p>
+        <h2 className={style.amenities__roomsContainerHeading}>
+          Where you'll sleep
+        </h2>
+        <Slider />
       </div>
       <div className={style.amenities__displayFirst}>
         <h3 className={style.amenities__displayFirstHeading}>Amenities</h3>

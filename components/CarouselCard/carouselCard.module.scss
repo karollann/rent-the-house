@@ -1,0 +1,44 @@
+.carouselCard__imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 36px 0;
+  margin: 0 20px;
+}
+.carouselCard__img {
+  object-fit: cover;
+  width: 400px;
+  height: 266px;
+  position: relative;
+  border-radius: 24px;
+}
+
+.carouselCard__imgTitle {
+  padding-top: 12px;
+}
+
+.carouselCard__imgDescription {
+  padding-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+// @media only screen and (max-width: 980px) {
+//   .projectCard-container {
+//     padding: 100px 0 0 0;
+//   }
+// }
+
+// @media only screen and (max-width: 410px) {
+//   .projectCard__img {
+//     width: 269px;
+//     height: 155px;
+//   }
+// }
+// @media only screen and (max-width: 340px) {
+//   .projectCard__img {
+//     width: 242px;
+//     height: 139px;
+//   }
+// }

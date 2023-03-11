@@ -3,8 +3,14 @@ import { Header } from "@/components/Header/Header";
 import { Hero } from "@/components/Hero/Hero";
 import { About } from "@/components/About/About";
 import { Amenities } from "@/components/Amenities/Amenities";
+// import { useElementOnScreen } from "@/hooks/useElementOnScreen";
+import { useInView } from "react-intersection-observer";
 
 export default function Home() {
+  const { ref, inView } = useInView({
+    threshold: 0.09,
+  });
+
   return (
     <>
       <Head>
@@ -14,9 +20,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container">
-        <Header />
+        <Header isAboutInView={inView} />
         <main>
-          <Hero />
+          <Hero ref={ref} />
           <About />
           <Amenities />
         </main>

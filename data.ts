@@ -35,7 +35,14 @@ import IconBedroom from "./components/Icons/IconBedroom";
 import IconBathroom from "./components/Icons/IconBathroom";
 import IconWiFi from "./components/Icons/IconWiFi";
 import IconFirePit from "./components/Icons/IconFirePit";
+
+import Bedroom1 from "./public/BedroomsPhotos/Bedroom1.jpg";
+import Bedroom2 from "./public/BedroomsPhotos/Bedroom2.jpg";
+import Bedroom3 from "./public/BedroomsPhotos/Bedroom3.jpg";
+import Bedroom4 from "./public/BedroomsPhotos/Bedroom4.jpg";
+
 import { ReactElement, SVGProps } from "react";
+import { StaticImageData } from "next/image";
 
 export type Amenity = {
   icon: (props: SVGProps<SVGSVGElement>) => ReactElement;
@@ -148,12 +155,26 @@ export const amenityCardData: Amenities = {
   notIncluded: [{ icon: IconWashingMachine, name: "Washing machine" }],
 };
 
-// Object.keys(dupa) // = ['kitchen', 'bathroom']
-// Object.values(dupa) // = [[{ icon: 'fire', name: 'Fire pit'}, {}], [{}]]
-
 export const primaryAmenityCardData = [
   { icon: IconPeople, name: "8 Guests" },
   { icon: IconBedroom, name: "4 Bedrooms" },
   { icon: IconBedLinens, name: "5 Beds" },
   { icon: IconBathroom, name: "2 Bathrooms" },
+];
+
+export type carouselDataType = {
+  photoImport: StaticImageData;
+  description: string;
+  bed: string;
+};
+
+export const carouselData: carouselDataType[] = [
+  {
+    photoImport: Bedroom1,
+    description: "Bedroom 1",
+    bed: "1 double bed, 1 single bed",
+  },
+  { photoImport: Bedroom2, description: "Bedroom 2", bed: "1 double bed" },
+  { photoImport: Bedroom3, description: "Bedroom 3", bed: "1 double bed" },
+  { photoImport: Bedroom4, description: "Bedroom 4", bed: "1 queen bed" },
 ];
