@@ -1,0 +1,18 @@
+.mapContainer {
+  padding: 64px;
+
+  &__title {
+    font-size: 32px;
+    padding-bottom: 24px;
+  }
+
+  &__location {
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 24px;
+  }
+}
+.map {
+  height: 450px;
+  z-index: 1;
+}

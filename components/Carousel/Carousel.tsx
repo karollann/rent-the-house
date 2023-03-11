@@ -60,7 +60,7 @@ export const Slider = () => {
           ? "transform 1000ms linear"
           : "transform 500ms linear"
       }
-      containerClass="carousel-container"
+      containerClass="carouselContainer"
       removeArrowOnDeviceType={["mobile"]}
       deviceType={screenSize}
     >

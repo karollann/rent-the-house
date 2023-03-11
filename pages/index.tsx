@@ -1,10 +1,21 @@
 import Head from "next/head";
+import dynamic from "next/dynamic";
+import { useInView } from "react-intersection-observer";
+import { isBrowser } from "../utils";
+
 import { Header } from "@/components/Header/Header";
 import { Hero } from "@/components/Hero/Hero";
 import { About } from "@/components/About/About";
 import { Amenities } from "@/components/Amenities/Amenities";
 // import { useElementOnScreen } from "@/hooks/useElementOnScreen";
-import { useInView } from "react-intersection-observer";
+// import { Map } from "@/components/Map/Map";
+
+const Map = dynamic(
+  () => import("../components/Map/Map").then((mod) => mod.Map),
+  {
+    ssr: false,
+  }
+);
 
 export default function Home() {
   const { ref, inView } = useInView({
@@ -25,6 +36,7 @@ export default function Home() {
           <Hero ref={ref} />
           <About />
           <Amenities />
+          {isBrowser && <Map />}
         </main>
       </div>
     </>

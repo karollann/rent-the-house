@@ -1,14 +1,14 @@
 .carouselContainer {
-  background-color: red;
-
   .react-multiple-carousel__arrow--right {
-    right: 2px;
+    right: 9px;
+    top: 184px;
     &::before {
       transform: translateX(2px);
     }
   }
   .react-multiple-carousel__arrow--left {
-    left: 2px;
+    left: 9px;
+    top: 184px;
 
     &::before {
       transform: translateX(-2px);

@@ -86,7 +86,7 @@ export const Amenities = () => {
         <Slider />
       </div>
       <div className={style.amenities__displayFirst}>
-        <h3 className={style.amenities__displayFirstHeading}>Amenities</h3>
+        <h2 className={style.amenities__displayFirstHeading}>Amenities</h2>
         <ul className={style.amenities__displayFirstList}>
           {displayFirstAmenities.map((amenity) => (
             <AmenityCard
