@@ -7,6 +7,8 @@ import { Header } from "@/components/Header/Header";
 import { Hero } from "@/components/Hero/Hero";
 import { About } from "@/components/About/About";
 import { Amenities } from "@/components/Amenities/Amenities";
+import { Reviews } from "@/components/Reviews/Reviews";
+import { MeteoWidget } from "@/components/MeteoWidget/MeteoWidget";
 // import { useElementOnScreen } from "@/hooks/useElementOnScreen";
 // import { Map } from "@/components/Map/Map";
 
@@ -36,7 +38,9 @@ export default function Home() {
           <Hero ref={ref} />
           <About />
           <Amenities />
+          <Reviews />
           {isBrowser && <Map />}
+          <MeteoWidget />
         </main>
       </div>
     </>

@@ -1,8 +1,9 @@
 .amenities {
   padding: 0px 64px;
+
   &__heading {
     padding: 24px;
-    font-size: 36px;
+    font-size: 24px;
   }
 
   &__primaryAmenities {
@@ -19,7 +20,7 @@
   }
 
   &__text {
-    font-size: 24px;
+    font-size: 18px;
     padding-bottom: 24px;
   }
 
@@ -28,7 +29,7 @@
   }
 
   &__roomsContainerHeading {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   &__displayFirst {
@@ -36,7 +37,7 @@
   }
 
   &__displayFirstHeading {
-    font-size: 32px;
+    font-size: 24px;
     padding-bottom: 24px;
   }
 
@@ -56,6 +57,6 @@
   &__name {
     padding-left: 12px;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
   }
 }

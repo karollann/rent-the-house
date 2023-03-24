@@ -23,7 +23,8 @@
     "**/*.ts",
     "**/*.tsx",
     "components/Mapp",
-    "components/Map.tsx/Map.jsx"
+    "components/Map.tsx/Map.jsx",
+    "components/MeteoWidget/MeteoWidget.jsx"
   ],
   "exclude": ["node_modules"]
 }

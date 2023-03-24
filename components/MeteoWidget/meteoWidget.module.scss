@@ -1,0 +1,56 @@
+.meteoWidget {
+  width: 350px;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 24px;
+  margin: 24px;
+  padding: 12px;
+
+  &__locationContainer {
+    display: flex;
+    padding-bottom: 12px;
+    justify-content: center;
+  }
+
+  &__locationHeading {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__infoContainer {
+    display: flex;
+    justify-content: center;
+    color: var(--color-secondary);
+  }
+
+  &__tempContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+  }
+
+  &__temp {
+    font-size: 32px;
+    padding-left: 12px;
+  }
+
+  &__weatherDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  &__weatherDescription {
+    padding-bottom: 12px;
+  }
+  &__feelsLike {
+    padding-bottom: 12px;
+  }
+
+  &__windContainer {
+    display: flex;
+    align-items: center;
+  }
+  &__windSpeed {
+    padding-left: 12px;
+  }
+}

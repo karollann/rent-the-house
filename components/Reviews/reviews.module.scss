@@ -1,0 +1,12 @@
+.reviewsContainer {
+  padding: 64px 64px 0 64px;
+
+  &__heading {
+    padding-bottom: 24px;
+    font-size: 32px;
+  }
+}
+
+.reviewsCardsContainer {
+  display: flex;
+}

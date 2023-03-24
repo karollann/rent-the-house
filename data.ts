@@ -36,6 +36,20 @@ import IconBathroom from "./components/Icons/IconBathroom";
 import IconWiFi from "./components/Icons/IconWiFi";
 import IconFirePit from "./components/Icons/IconFirePit";
 
+import IconClearSkyDay from "./components/Icons/IconsMeteo/IconClearSkyDay";
+import IconClearSkyNight from "./components/Icons/IconsMeteo/IconClearSkyNight";
+import IconFewCloudsDay from "./components/Icons/IconsMeteo/IconFewCloudsDay";
+import IconFewCloudsNight from "./components/Icons/IconsMeteo/IconFewCloudsNight";
+import IconScatteredCloudsDay from "./components/Icons/IconsMeteo/IconScatteredCloudsDay";
+import IconScatteredCloudsNight from "./components/Icons/IconsMeteo/IconScatteredCloudsNight";
+import IconClouds from "./components/Icons/IconsMeteo/IconClouds";
+import IconMist from "./components/Icons/IconsMeteo/IconMist";
+import IconShowerDay from "./components/Icons/IconsMeteo/IconShowerDay";
+import IconShowerNight from "./components/Icons/IconsMeteo/IconShowerNight";
+import IconRainDay from "./components/Icons/IconsMeteo/IconRainDay";
+import IconRainNight from "./components/Icons/IconsMeteo/IconRainNight";
+import IconThunderstorm from "./components/Icons/IconsMeteo/IconThunderstorm";
+
 import Bedroom1 from "./public/BedroomsPhotos/Bedroom1.jpg";
 import Bedroom2 from "./public/BedroomsPhotos/Bedroom2.jpg";
 import Bedroom3 from "./public/BedroomsPhotos/Bedroom3.jpg";
@@ -178,3 +192,129 @@ export const carouselData: carouselDataType[] = [
   { photoImport: Bedroom3, description: "Bedroom 3", bed: "1 double bed" },
   { photoImport: Bedroom4, description: "Bedroom 4", bed: "1 queen bed" },
 ];
+
+export type reviewDataType = {
+  guestName: string;
+  date: string;
+  rating: number;
+  reviewBody: string;
+};
+
+export const reviewsData: reviewDataType[] = [
+  {
+    guestName: "Adam",
+    date: "July 2022",
+    rating: 5,
+    reviewBody:
+      "Great place and experience! We were a group of 6adults and 2 infants. We could easily fit another pair of adults. The estate has almost all the amenities you could think of (apart of washing machine), with beautiful, big garden. One watch-out - the access to lake is approx 200m away. Staying there is like living at your best friend’s place; the hosts are super friendly and welcoming.",
+  },
+  {
+    guestName: "Bartosz",
+    date: "August 2022",
+    rating: 5,
+    reviewBody:
+      "Przestronny dom, bardzo dobrze wyposażony. Dla dwóch rodzin z w sumie 5 małych dzieci w sam raz. Duża działka wokół domu - duży atut przy rozbrykanych małolatach. W domu było wszystko, co potrzebne by miło spędzić czas. Bardzo dobra lokalizacja, z bliskim dostępem do jeziora. Brak jakichkolwiek zastrzeżeń. Tylko dodatkowe pochwały za super kontakt z właścicielami.",
+  },
+  {
+    guestName: "Dominik",
+    date: "August 2022",
+    rating: 5,
+    reviewBody:
+      "Dom z duszą!!! Piękne drewniane wnętrze z pełnym wyposażeniem czterema pokojami i dwoma łazienkami. Kuchnia dobrze wyposażona niczego nie brakowało, a świeża kawa z palarni La Kafo w Augustowie smakuje wyśmienicie na tarasie z widokiem na jezioro. Ogromny ogród otoczony starymi drzewami zapewnia odpowiednią dawkę prywatności i pozwala odprężyć się i zrelaksować. Pomost, łódka i rowery zapewniają odpowiednią dawkę rozrywki. Szczerze polecam!!!",
+  },
+];
+
+export type meteoWidgetIcon = {
+  // iconCode: string;
+  // icon: (props: SVGProps<SVGSVGElement>) => ReactElement;
+  // icon: (props: SVGProps<SVGSVGElement>) => ReactElement;
+};
+
+// : meteoWidgetIcon[]
+
+export const meteoWidgetIcons = [
+  {
+    iconCode: "01d",
+    // icon: <IconClearSkyDay />,
+    icon: IconClearSkyDay,
+  },
+  {
+    iconCode: "01n",
+    icon: IconClearSkyNight,
+  },
+  {
+    iconCode: "02d",
+    icon: IconFewCloudsDay,
+  },
+  {
+    iconCode: "02n",
+    icon: IconFewCloudsNight,
+  },
+  {
+    iconCode: "03d",
+    icon: IconScatteredCloudsDay,
+  },
+  {
+    iconCode: "03n",
+    icon: IconScatteredCloudsNight,
+  },
+  {
+    iconCode: "04d",
+    icon: IconClouds,
+  },
+  {
+    iconCode: "04n",
+    icon: IconClouds,
+  },
+  {
+    iconCode: "50d",
+    icon: IconMist,
+  },
+  {
+    iconCode: "50n",
+    icon: IconMist,
+  },
+  {
+    iconCode: "09d",
+    icon: IconShowerDay,
+  },
+  {
+    iconCode: "09n",
+    icon: IconShowerNight,
+  },
+  {
+    iconCode: "10d",
+    icon: IconRainDay,
+  },
+  {
+    iconCode: "10n",
+    icon: IconRainNight,
+  },
+  {
+    iconCode: "11d",
+    icon: IconThunderstorm,
+  },
+  {
+    iconCode: "11n",
+    icon: IconThunderstorm,
+  },
+];
+
+// export const meteoWidgetIcons = {
+//   "01d": IconClearSkyDay,
+//   "01n": IconClearSkyNight,
+//   "02d": IconFewCloudsDay,
+//   "02n": IconFewCloudsNight,
+//   "03d": IconScatteredCloudsDay,
+//   "03n": IconScatteredCloudsNight,
+//   "04n": IconClouds,
+//   "04d": IconClouds,
+//   "50d": IconMist,
+//   "50n": IconMist,
+//   "09d": IconShowerDay,
+//   "09n": IconShowerNight,
+//   "10d": IconRainDay,
+//   "10n": IconRainNight,
+//   "11d": IconThunderstorm,
+//   "11n": IconThunderstorm,
+// };

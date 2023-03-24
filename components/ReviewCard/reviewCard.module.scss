@@ -1,0 +1,30 @@
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  margin: 0 12px;
+  padding: 12px;
+  border: 1px;
+  border-color: var(--color-secondary);
+  border-radius: 24px;
+  border-style: solid;
+
+  &__guestName {
+    padding-bottom: 6px;
+    font-size: 24px;
+    color: var(--color-secondary);
+  }
+
+  &__date {
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(113, 113, 113);
+  }
+
+  &__review {
+    padding: 12px 0;
+
+    font-size: 20px;
+    color: var(--color-secondary);
+  }
+}

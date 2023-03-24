@@ -1,6 +1,4 @@
 import { ReactElement, SVGProps } from "react";
-import styles from "./amenityCard.module.scss";
-// import style from "./amenities.module.scss";
 
 type AmenityCardProps = {
   icon: (props: SVGProps<SVGSVGElement>) => ReactElement;
