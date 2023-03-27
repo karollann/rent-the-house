@@ -9,6 +9,7 @@ import { About } from "@/components/About/About";
 import { Amenities } from "@/components/Amenities/Amenities";
 import { Reviews } from "@/components/Reviews/Reviews";
 import { MeteoWidget } from "@/components/MeteoWidget/MeteoWidget";
+import { DatePickerComponent } from "@/components/DatePicker/DatePickerComponent";
 // import { useElementOnScreen } from "@/hooks/useElementOnScreen";
 // import { Map } from "@/components/Map/Map";
 
@@ -36,11 +37,18 @@ export default function Home() {
         <Header isAboutInView={inView} />
         <main>
           <Hero ref={ref} />
-          <About />
-          <Amenities />
-          <Reviews />
-          {isBrowser && <Map />}
-          <MeteoWidget />
+          <div className="belowHeroContainer">
+            <div className="mainContainer">
+              <About />
+              <Amenities />
+              <Reviews />
+              {isBrowser && <Map />}
+            </div>
+            <aside className="aside">
+              <MeteoWidget />
+              <DatePickerComponent />
+            </aside>
+          </div>
         </main>
       </div>
     </>

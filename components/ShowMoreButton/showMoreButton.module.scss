@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 32px;
+  padding: 10px 24px;
   border-radius: 24px;
   background-color: white;
   cursor: pointer;
@@ -16,6 +16,6 @@
   &__text {
     color: black;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 16px;
   }
 }

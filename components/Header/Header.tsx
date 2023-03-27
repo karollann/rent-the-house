@@ -1,5 +1,3 @@
-import { BookButton } from "../BookButton/BookButton";
-
 import styles from "./header.module.scss";
 
 type HeaderPropsType = { isAboutInView: boolean };
@@ -34,7 +32,9 @@ export const Header = ({ isAboutInView }: HeaderPropsType) => {
         <a href="#" className={styles.header__link}>
           Contact
         </a>
-        <BookButton buttonText="Book Now" />
+        <a href="#" className={styles.header__bookButton}>
+          <p className={styles.header__bookButtonText}>Book Now</p>
+        </a>
       </nav>
     </header>
   );

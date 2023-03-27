@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import "../styles/_react-mutiple-carousel-override.scss";
+
 import Modal from "react-modal";
 import type { AppProps } from "next/app";
 

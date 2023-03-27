@@ -46,4 +46,18 @@
   a:nth-last-child(2) {
     margin-right: 24px;
   }
+
+  &__bookButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 32px;
+    border-radius: 24px;
+    background-color: aquamarine;
+  }
+
+  &__bookButtonText {
+    color: red;
+    font-weight: 500;
+  }
 }

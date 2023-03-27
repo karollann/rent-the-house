@@ -1,16 +1,16 @@
 .meteoWidget {
-  width: 350px;
+  // width: 300px;
   justify-content: center;
   border-style: solid;
   border-width: 1px;
   border-radius: 24px;
-  margin: 24px;
   padding: 12px;
 
   &__locationContainer {
     display: flex;
     padding-bottom: 12px;
     justify-content: center;
+    align-content: center;
   }
 
   &__locationHeading {
@@ -31,7 +31,7 @@
   }
 
   &__temp {
-    font-size: 32px;
+    font-size: 24px;
     padding-left: 12px;
   }
 

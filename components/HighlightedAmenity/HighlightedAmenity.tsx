@@ -12,7 +12,7 @@ export const HighlightedAmenity = ({
 }: HighlightedAmenityProps) => {
   return (
     <div className={style.amenityBox}>
-      <Icon width="32px" height="32px" />
+      <Icon width="26px" height="26px" />
       <h4 className={style.amenityBox__name}>{name}</h4>
     </div>
   );

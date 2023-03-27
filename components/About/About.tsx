@@ -11,7 +11,7 @@ export const About = () => {
           <h2 className={styles.about__sectionHeading}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h2>
-          <p>
+          <p className={styles.about__sectionText}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste nobis
             amet eveniet facere architecto est repudiandae magni dolorum
             repellat exercitationem tempora eligendi, ea vero esse expedita

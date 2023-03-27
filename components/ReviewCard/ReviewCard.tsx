@@ -17,8 +17,8 @@ export const ReviewCard = ({
           .fill("")
           .map((star, i) => (
             <IconStar
-              width={"24px"}
-              height={"24px"}
+              width={"16px"}
+              height={"16px"}
               key={i}
               fill={i <= rating - 1 ? "	rgb(255, 215, 0)" : "rgb(80, 80, 80)"}
             />

@@ -1,7 +1,7 @@
 .about {
   display: flex;
   flex-direction: column;
-  padding: 128px 64px 64px 64px;
+  padding: 128px 32px 64px 64px;
 
   &__section {
     display: flex;
@@ -11,8 +11,17 @@
     }
   }
 
+  &__sectionHeading {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+
+  &__sectionText {
+    font-size: 12px;
+  }
+
   &__image {
-    width: 500px;
+    width: 400px;
     height: auto;
     border-radius: 32px;
   }
@@ -23,5 +32,10 @@
 
   &__list {
     list-style-type: none;
+  }
+
+  &__listElement {
+    font-size: 12px;
+    padding-bottom: 4px;
   }
 }

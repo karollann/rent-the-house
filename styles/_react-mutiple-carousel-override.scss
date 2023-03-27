@@ -1,14 +1,16 @@
 .carouselContainer {
+  z-index: 10;
+
   .react-multiple-carousel__arrow--right {
-    right: 9px;
-    top: 184px;
+    right: 0px;
+    top: 150px;
     &::before {
       transform: translateX(2px);
     }
   }
   .react-multiple-carousel__arrow--left {
-    left: 9px;
-    top: 184px;
+    left: 0px;
+    top: 150px;
 
     &::before {
       transform: translateX(-2px);

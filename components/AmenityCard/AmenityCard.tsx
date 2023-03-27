@@ -15,7 +15,7 @@ export const AmenityCard = ({
 }: AmenityCardProps) => {
   return (
     <li className={containerStyle}>
-      <Icon width="32px" height="32px" />
+      <Icon width="26px" height="26px" />
       <h4 className={headingStyle}>{name}</h4>
     </li>
   );
