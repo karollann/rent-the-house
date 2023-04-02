@@ -1,16 +1,16 @@
 .reviewCard {
   display: flex;
   flex-direction: column;
-  width: 276px;
-  margin: 0 12px;
-  padding: 12px;
+  width: 300px;
+  margin-right: 24px;
+  padding: 24px;
   border: 1px;
   border-color: var(--color-secondary);
   border-radius: 24px;
   border-style: solid;
 
   &__guestName {
-    padding-bottom: 6px;
+    padding-bottom: 2px;
     font-size: 16px;
     color: var(--color-secondary);
   }
@@ -23,8 +23,9 @@
   }
 
   &__review {
-    padding-top: 6px;
-    font-size: 12px;
+    padding-top: 12px;
+    font-size: 16px;
+    line-height: 1.5;
     color: var(--color-secondary);
   }
 }

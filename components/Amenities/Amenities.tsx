@@ -46,28 +46,34 @@ export const Amenities = () => {
           />
         ))}
       </ul>
-      <div className={style.amenities__text}>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
-          dignissimos fuga et, a impedit facilis porro, officia vel suscipit
-          quisquam quas perspiciatis sint nobis, aut laudantium ex. Nemo,
-          tempore incidunt. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Qui dignissimos est, tenetur reprehenderit harum tempora illo
-          neque atque, aliquid rerum impedit iste alias perspiciatis perferendis
-          pariatur natus assumenda. Illum, provident!Lorem
+      <div className={style.amenities__textContainer}>
+        <p className={style.amenities__text}>
+          Dom posiada przestronny salon z kuchnią, kominkiem i dużym stołem
+          jadalnym. Na parterze znajduje się również kącik wypoczynkowy z TV,
+          kanapą i fotelami.
+          <br />
+          Dostępne są również dwa tarasy – jeden z nich zadaszony z widokiem na
+          jezioro, drugi dobrze nasłoneczniony. W domu znajdują się dwie
+          łazienki (prysznic i toaleta w obu) zlokalizowane na parterze oraz
+          pietrze.
+          <br />
+          Cztery sypialnie usytuowane są na pierwszym piętrze – z dwóch z nich
+          roztacza się widok na jezioro. Na terenie działki miejsce na
+          samochody.
+          <br />
+          Dostępych jest wiele atrakcji na terenie działki i w okolicy: sporty
+          wodne, wędkarstwo, boisko do badmintona, miejsce na ognisko.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
-          dignissimos fuga et, a impedit facilis porro, officia vel suscipit
-          quisquam quas perspiciatis sint nobis, aut laudantium ex. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Atque amet molestias
-          doloremque placeat voluptatum, commodi quod veritatis reiciendis totam
-          ipsam esse? Saepe, esse dolore deserunt aliquid libero harum?
-          Adipisci, nam? Nemo, tempore incidunt. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Qui dignissimos est, tenetur
-          reprehenderit harum tempora illo neque atque, aliquid rerum impedit
-          iste alias perspiciatis perferendis pariatur natus assumenda. Illum,
-          provident!Lorem
+        <p className={style.amenities__text}>
+          We wsi (1,6km) dostępna jest plaża z piaskowym i płytkim zejściem do
+          wody oraz ogólnodostępne boiska do piłki nożnej, koszykówki i kort
+          tenisowy.
+          <br />
+          Tereny Suwalszczyzny są świetnym miejscem do wycieczek rowerowych,
+          spacerów czy biegania. Jesienią pobliskie lasy są rajem dla
+          grzybiarzy. Doskonała baza wypadowa do wycieczek do Wigierskiego Parku
+          Narodowego, słynnego wiaduktu kolejowego w Stańczykach, parku wodnego
+          w Druskiennikach, Kowna czy Wilna.
         </p>
       </div>
       <div className={style.amenities__highlitedAmenities}>

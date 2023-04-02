@@ -20,7 +20,8 @@
   }
 
   &__text {
-    font-size: 12px;
+    font-size: 16px;
+    line-height: 1.5;
     padding-bottom: 24px;
   }
 
@@ -57,6 +58,6 @@
   &__name {
     padding-left: 12px;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 16px;
   }
 }

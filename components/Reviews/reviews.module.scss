@@ -1,12 +1,18 @@
-.reviewsContainer {
+.reviews {
   padding: 64px 64px 0 64px;
 
-  &__heading {
+  &__headingContainer {
+    display: flex;
+    flex-direction: row;
     padding-bottom: 24px;
+    justify-content: space-between;
+  }
+
+  &__heading {
     font-size: 24px;
   }
 }
 
-.reviewsCardsContainer {
+.reviewsCards {
   display: flex;
 }

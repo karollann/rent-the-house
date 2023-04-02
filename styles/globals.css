@@ -40,12 +40,12 @@ a {
 .inMainContainer {
   display: flex;
   flex-direction: column;
-  width: 75vw;
+  width: 73vw;
 }
 
 .aside {
   /* width: 25vw; */
-  padding: 128px 64px 128px 32px;
+  padding: 128px 64px 128px 64px;
   display: flex;
   flex-direction: column;
   align-content: center;

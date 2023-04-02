@@ -5,6 +5,7 @@ import "yet-another-react-lightbox/styles.css";
 import { photos as allPhotos } from "@/data";
 
 import styles from "./gallery.module.scss";
+import { MoreButton } from "../MoreButton/MoreButton";
 
 const renderPhoto: RenderPhoto = ({ imageProps }) => (
   <img {...imageProps} style={{ ...imageProps.style, borderRadius: "24px" }} />
@@ -20,12 +21,7 @@ export const Gallery = ({ photos }: { photos: Photo[] }) => {
     <div className={styles.gallery}>
       <div className={styles.gallery__headingContainer}>
         <h2 className={styles.gallery__heading}>Gallery</h2>
-        <button
-          className={styles.gallery__seeMoreButton}
-          onClick={() => setIndex(0)}
-        >
-          See more
-        </button>
+        <MoreButton onClick={() => setIndex(0)} text="See more" />
       </div>
       <PhotoAlbum
         layout="rows"

@@ -3,30 +3,14 @@ import { SVGProps } from "react";
 
 const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
   <svg
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
     width="1em"
     height="1em"
-    viewBox="0 0 24 24"
-    id="Layer_1"
-    data-name="Layer 1"
-    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <defs>
-      <style>
-        {
-          ".cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.96px}"
-        }
-      </style>
-    </defs>
-    <path
-      className="cls-1"
-      d="M1.21 23.79v-2.94A6.86 6.86 0 0 1 8.08 14H14a2 2 0 0 1 2 2 2 2 0 0 1-2 2h1l4.3-4.29a2.08 2.08 0 0 1 1.41-.71 2.08 2.08 0 0 1 2.08 2.08 2.08 2.08 0 0 1-.61 1.47l-4.12 4.13a4 4 0 0 1-2.78 1.15H11a2 2 0 0 0-2 2"
-    />
-    <circle className="cls-1" cx={6.14} cy={9.15} r={2.94} />
-    <path
-      className="cls-1"
-      d="m20.84 5.19-1.96-3.4L8.69 7.68M17.45 7.15l-1.97-3.4"
-    />
+    <path d="M16 1.2a6.795 6.795 0 0 0-6.284 9.392L1.168 19.14 1 19.515V23h3.533l.429-.076L7 20.886V20h.885L10 17.886V17h.886l2.664-2.664A6.797 6.797 0 1 0 16 1.2zm0 12.6a5.76 5.76 0 0 1-2.672-.657L10.472 16H9v1.472L7.472 19H6v1.472l-1.522 1.522-.033.006H2v-2.271l.005-.011 8.918-8.919A5.798 5.798 0 1 1 16 13.8zm-4.371-.75L3.682 21H3v-.68l7.95-7.952zM17.5 4A2.5 2.5 0 1 0 20 6.5 2.5 2.5 0 0 0 17.5 4zm0 4A1.5 1.5 0 1 1 19 6.5 1.502 1.502 0 0 1 17.5 8z" />
+    <path fill="none" d="M0 0h24v24H0z" />
   </svg>
 );
 
