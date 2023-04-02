@@ -59,9 +59,13 @@ export const DatePickerComponent = () => {
         minDate={startDate}
         placeholderText="Add date"
       />
-      <a href="#" className={styles.datePicker__bookButton}>
-        <p className={styles.datePicker__bookButtonText}>Continue</p>
-      </a>
+      {startDate && endDate !== null ? (
+        <a href="#" className={styles.datePicker__bookButton}>
+          <p className={styles.datePicker__bookButtonText}>Continue</p>
+        </a>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

@@ -2,6 +2,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import { useInView } from "react-intersection-observer";
 import { isBrowser } from "../utils";
+import { photos } from "@/data";
 
 import { Header } from "@/components/Header/Header";
 import { Hero } from "@/components/Hero/Hero";
@@ -10,8 +11,10 @@ import { Amenities } from "@/components/Amenities/Amenities";
 import { Reviews } from "@/components/Reviews/Reviews";
 import { MeteoWidget } from "@/components/MeteoWidget/MeteoWidget";
 import { DatePickerComponent } from "@/components/DatePicker/DatePickerComponent";
-// import { useElementOnScreen } from "@/hooks/useElementOnScreen";
-// import { Map } from "@/components/Map/Map";
+import PhotoAlbum from "react-photo-album";
+import { Gallery } from "@/components/Gallery/Gallery";
+
+const photoGroup = photos.slice(0, 9);
 
 const Map = dynamic(
   () => import("../components/Map/Map").then((mod) => mod.Map),
@@ -35,10 +38,10 @@ export default function Home() {
       </Head>
       <div className="container">
         <Header isAboutInView={inView} />
-        <main>
+        <main className="main">
           <Hero ref={ref} />
           <div className="belowHeroContainer">
-            <div className="mainContainer">
+            <div className="inMainContainer">
               <About />
               <Amenities />
               <Reviews />
@@ -49,6 +52,7 @@ export default function Home() {
               <DatePickerComponent />
             </aside>
           </div>
+          <Gallery photos={photoGroup} />
         </main>
       </div>
     </>

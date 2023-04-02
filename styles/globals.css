@@ -28,12 +28,16 @@ a {
   margin: 0 auto;
 }
 
+.main {
+  padding-bottom: 64px;
+}
+
 .belowHeroContainer {
   display: flex;
   flex-direction: row;
 }
 
-.mainContainer {
+.inMainContainer {
   display: flex;
   flex-direction: column;
   width: 75vw;
@@ -47,4 +51,14 @@ a {
   align-content: center;
   flex-wrap: wrap;
   border-left: 1px solid;
+  margin-bottom: 64px;
+}
+
+.miniPhotoAlbum {
+  margin: 0 64px;
+}
+
+.miniPhotoAlbum__heading {
+  font: 24px;
+  padding-bottom: 18px;
 }

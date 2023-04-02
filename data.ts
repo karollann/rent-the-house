@@ -57,6 +57,7 @@ import Bedroom4 from "./public/BedroomsPhotos/Bedroom4.jpg";
 
 import { ReactElement, SVGProps } from "react";
 import { StaticImageData } from "next/image";
+import { Photo } from "react-photo-album";
 
 export type Amenity = {
   icon: (props: SVGProps<SVGSVGElement>) => ReactElement;
@@ -300,21 +301,266 @@ export const meteoWidgetIcons = [
   },
 ];
 
-// export const meteoWidgetIcons = {
-//   "01d": IconClearSkyDay,
-//   "01n": IconClearSkyNight,
-//   "02d": IconFewCloudsDay,
-//   "02n": IconFewCloudsNight,
-//   "03d": IconScatteredCloudsDay,
-//   "03n": IconScatteredCloudsNight,
-//   "04n": IconClouds,
-//   "04d": IconClouds,
-//   "50d": IconMist,
-//   "50n": IconMist,
-//   "09d": IconShowerDay,
-//   "09n": IconShowerNight,
-//   "10d": IconRainDay,
-//   "10n": IconRainNight,
-//   "11d": IconThunderstorm,
-//   "11n": IconThunderstorm,
-// };
+export const photos: Photo[] = [
+  {
+    src: "images_800px/cake_800px.jpg",
+    width: 533,
+    height: 800,
+    images: [
+      { src: "images_450px/cake_450px.jpg", width: 300, height: 450 },
+      { src: "images_180px/cake_180px.jpg", width: 120, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/lakeView_800px.jpg",
+    width: 1200,
+    height: 800,
+    images: [
+      { src: "images_450px/lakeView_450px.jpg", width: 675, height: 450 },
+      { src: "images_180px/lakeView_180px.jpg", width: 270, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/coffee_800px.jpg",
+    width: 535,
+    height: 800,
+    images: [
+      { src: "images_450px/coffee_450px.jpg", width: 301, height: 450 },
+      { src: "images_180px/coffee_180px.jpg", width: 120, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/field_800px.jpg",
+    width: 1200,
+    height: 800,
+    images: [
+      { src: "images_450px/field_450px.jpg", width: 675, height: 450 },
+      { src: "images_180px/field_180px.jpg", width: 270, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/house_800px.jpg",
+    width: 1200,
+    height: 800,
+    images: [
+      { src: "images_450px/house_450px.jpg", width: 675, height: 450 },
+      { src: "images_180px/house_180px.jpg", width: 270, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/gravelRoad_800px.jpg",
+    width: 598,
+    height: 800,
+    images: [
+      { src: "images_450px/gravelRoad_450px.jpg", width: 336, height: 450 },
+      { src: "images_180px/gravelRoad_180px.jpg", width: 135, height: 180 },
+    ],
+  },
+
+  {
+    src: "images_800px/garden_800px.jpg",
+    width: 1069,
+    height: 800,
+    images: [
+      { src: "images_450px/garden_450px.jpg", width: 601, height: 450 },
+      { src: "images_180px/garden_180px.jpg", width: 241, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/web_800px.jpg",
+    width: 598,
+    height: 800,
+    images: [
+      { src: "images_450px/web_450px.jpg", width: 336, height: 450 },
+      { src: "images_180px/web_180px.jpg", width: 135, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/fieldView_800px.jpg",
+    width: 1200,
+    height: 800,
+    images: [
+      { src: "images_450px/fieldView_450px.jpg", width: 675, height: 450 },
+      { src: "images_180px/fieldView_180px.jpg", width: 270, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/lake_800px.jpg",
+    width: 598,
+    height: 800,
+    images: [
+      { src: "images_450px/lake_450px.jpg", width: 336, height: 450 },
+      { src: "images_180px/lake_180px.jpg", width: 135, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/lakeWinter_800px.jpg",
+    width: 1197,
+    height: 800,
+    images: [
+      { src: "images_450px/lakeWinter_450px.jpg", width: 673, height: 450 },
+      { src: "images_180px/lakeWinter_180px.jpg", width: 269, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/livingroom1_800px.jpg",
+    width: 1200,
+    height: 800,
+    images: [
+      { src: "images_450px/livingroom1_450px.jpg", width: 675, height: 450 },
+      { src: "images_180px/livingroom1_180px.jpg", width: 270, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/livingroom2_800px.jpg",
+    width: 1200,
+    height: 800,
+    images: [
+      { src: "images_450px/livingroom2_450px.jpg", width: 675, height: 450 },
+      { src: "images_180px/livingroom2_180px.jpg", width: 270, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/livingroomKitchen_800px.jpg",
+    width: 1200,
+    height: 800,
+    images: [
+      {
+        src: "images_450px/livingroomKitchen_450px.jpg",
+        width: 675,
+        height: 450,
+      },
+      {
+        src: "images_180px/livingroomKitchen_180px.jpg",
+        width: 270,
+        height: 180,
+      },
+    ],
+  },
+  {
+    src: "images_800px/kitchen_800px.jpg",
+    width: 1200,
+    height: 800,
+    images: [
+      { src: "images_450px/kitchen_450px.jpg", width: 675, height: 450 },
+      { src: "images_180px/kitchen_180px.jpg", width: 270, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/window_800px.jpg",
+    width: 533,
+    height: 800,
+    images: [
+      { src: "images_450px/window_450px.jpg", width: 300, height: 450 },
+      { src: "images_180px/window_180px.jpg", width: 120, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/publicBeach1_800px.jpg",
+    width: 1197,
+    height: 800,
+    images: [
+      { src: "images_450px/publicBeach1_450px.jpg", width: 673, height: 450 },
+      { src: "images_180px/publicBeach1_180px.jpg", width: 269, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/publicBeach2_800px.jpg",
+    width: 1197,
+    height: 800,
+    images: [
+      { src: "images_450px/publicBeach2_450px.jpg", width: 673, height: 450 },
+      { src: "images_180px/publicBeach2_180px.jpg", width: 269, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/courts_800px.jpg",
+    width: 1196,
+    height: 800,
+    images: [
+      { src: "images_450px/courts_450px.jpg", width: 673, height: 450 },
+      { src: "images_180px/courts_180px.jpg", width: 269, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/publicBeachParking_800px.jpg",
+    width: 1197,
+    height: 800,
+    images: [
+      {
+        src: "images_450px/publicBeachParking_450px.jpg",
+        width: 673,
+        height: 450,
+      },
+      {
+        src: "images_180px/publicBeachParking_180px.jpg",
+        width: 269,
+        height: 180,
+      },
+    ],
+  },
+  {
+    src: "images_800px/road_800px.jpg",
+    width: 1069,
+    height: 800,
+    images: [
+      { src: "images_450px/road_450px.jpg", width: 601, height: 450 },
+      { src: "images_180px/road_180px.jpg", width: 241, height: 180 },
+    ],
+  },
+
+  {
+    src: "images_800px/bathroom2_800px.jpg",
+    width: 450,
+    height: 800,
+    images: [
+      { src: "images_450px/bathroom2_450px.jpg", width: 253, height: 450 },
+      { src: "images_180px/bathroom2_180px.jpg", width: 101, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/bathroom1_800px.jpg",
+    width: 1200,
+    height: 800,
+    images: [
+      { src: "images_450px/bathroom1_450px.jpg", width: 675, height: 450 },
+      { src: "images_180px/bathroom1_180px.jpg", width: 270, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/room1_800px.jpg",
+    width: 1200,
+    height: 800,
+    images: [
+      { src: "images_450px/room1_450px.jpg", width: 675, height: 450 },
+      { src: "images_180px/room1_180px.jpg", width: 270, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/room2_800px.jpg",
+    width: 1200,
+    height: 800,
+    images: [
+      { src: "images_450px/room2_450px.jpg", width: 675, height: 450 },
+      { src: "images_180px/room2_180px.jpg", width: 270, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/room3_800px.jpg",
+    width: 1200,
+    height: 800,
+    images: [
+      { src: "images_450px/room3_450px.jpg", width: 675, height: 450 },
+      { src: "images_180px/room3_180px.jpg", width: 270, height: 180 },
+    ],
+  },
+  {
+    src: "images_800px/room4_800px.jpg",
+    width: 1200,
+    height: 800,
+    images: [
+      { src: "images_450px/room4_450px.jpg", width: 675, height: 450 },
+      { src: "images_180px/room4_180px.jpg", width: 270, height: 180 },
+    ],
+  },
+];
