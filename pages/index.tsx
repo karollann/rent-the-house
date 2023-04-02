@@ -11,7 +11,6 @@ import { Amenities } from "@/components/Amenities/Amenities";
 import { Reviews } from "@/components/Reviews/Reviews";
 import { MeteoWidget } from "@/components/MeteoWidget/MeteoWidget";
 import { DatePickerComponent } from "@/components/DatePicker/DatePickerComponent";
-import PhotoAlbum from "react-photo-album";
 import { Gallery } from "@/components/Gallery/Gallery";
 
 const photoGroup = photos.slice(0, 9);

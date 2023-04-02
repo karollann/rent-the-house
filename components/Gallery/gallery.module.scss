@@ -1,0 +1,27 @@
+.gallery {
+  margin: 0 64px;
+
+  &__headingContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    font-size: 24px;
+    padding-bottom: 18px;
+  }
+
+  &__seeMoreButton {
+    font-size: 18px;
+    padding-right: 24px;
+
+    border-width: 0;
+    background: none;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

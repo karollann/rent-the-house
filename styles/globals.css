@@ -53,12 +53,3 @@ a {
   border-left: 1px solid;
   margin-bottom: 64px;
 }
-
-.miniPhotoAlbum {
-  margin: 0 64px;
-}
-
-.miniPhotoAlbum__heading {
-  font: 24px;
-  padding-bottom: 18px;
-}
