@@ -15,7 +15,6 @@ export const Gallery = ({ photos }: { photos: Photo[] }) => {
   const [index, setIndex] = useState(-1);
 
   const slide = allPhotos.map((photo) => ({ ...photo, srcSet: photo.images }));
-  console.log("slide", slide);
 
   return (
     <div className={styles.gallery}>

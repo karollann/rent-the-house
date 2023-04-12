@@ -7,7 +7,9 @@ export const About = () => {
   return (
     <div className={styles.about}>
       <div className={styles.about__section}>
-        <div className={styles.about__container}>
+        <div
+          className={`${styles["about__container--left"]} ${styles.about__container}`}
+        >
           <h2 className={styles.about__sectionHeading}>
             Ideal for active recreation
           </h2>
@@ -23,7 +25,9 @@ export const About = () => {
       </div>
       <div className={styles.about__section}>
         <Image className={styles.about__image} src={livingroom} alt="" />
-        <div className={styles.about__container}>
+        <div
+          className={`${styles["about__container--right"]} ${styles.about__container}`}
+        >
           <h2 className={styles.about__sectionHeading}>...and relaxation</h2>
           <p className={styles.about__sectionText}>
             Idealne miejsce dla osób, które chciałby przenieść pracę zdalną

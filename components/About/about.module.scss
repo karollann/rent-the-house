@@ -29,5 +29,13 @@
 
   &__container {
     padding: 24px;
+
+    &--left {
+      padding-left: 0px;
+    }
+
+    &--right {
+      padding-right: 0px;
+    }
   }
 }

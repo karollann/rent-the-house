@@ -1,8 +1,12 @@
+import { useState } from "react";
+import { ContactFormModal } from "../ContactFormModal/ContactFormModal";
 import styles from "./header.module.scss";
 
 type HeaderPropsType = { isAboutInView: boolean };
 
 export const Header = ({ isAboutInView }: HeaderPropsType) => {
+  const [contactFormModalIsOpen, setContactFormModalIsOpen] = useState(false);
+
   const classes = !isAboutInView
     ? `${styles.header} ${styles.header__headerSticky}`
     : `${styles.header}`;
@@ -29,13 +33,20 @@ export const Header = ({ isAboutInView }: HeaderPropsType) => {
         <a href="#" className={styles.header__link}>
           Location
         </a>
-        <a href="#" className={styles.header__link}>
+        <a
+          onClick={() => setContactFormModalIsOpen(true)}
+          className={styles.header__link}
+        >
           Contact
         </a>
-        <a href="#" className={styles.header__bookButton}>
+        <a href="#" className={styles.header__link}>
           <p className={styles.header__bookButtonText}>Book Now</p>
         </a>
       </nav>
+      <ContactFormModal
+        modalIsOpen={contactFormModalIsOpen}
+        closeModal={() => setContactFormModalIsOpen(false)}
+      />
     </header>
   );
 };

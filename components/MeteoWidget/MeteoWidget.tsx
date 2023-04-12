@@ -49,8 +49,6 @@ const getMeteoData = async ({
     }
     let responseData = await response.json();
     onSuccess(responseData);
-    console.log("response", response);
-    console.log("responseData", responseData);
   } catch (err: unknown) {
     const message =
       err instanceof Error && err.message ? err.message : "Error has occurred!";
@@ -89,7 +87,6 @@ export const MeteoWidget = () => {
   );
 
   const Icon = iconObject?.icon;
-  console.log("Icon", iconObject);
 
   const currentTemp = Math.round(data.main.temp);
   const feelsLikeTemp = Math.round(data.main.feels_like);

@@ -15,8 +15,5 @@ export const CloseButton = ({ close }: CloseButtonProps) => {
         <IconClose width="24px" height="24px" />
       </button>
     </div>
-    // <button onClick={close} className={style.closeButton}>
-    //   <IconClose width="24px" height="24px" />
-    // </button>
   );
 };
