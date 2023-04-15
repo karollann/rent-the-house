@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "compile": "tsc --noEmit"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "@types/leaflet": "^1.9.1",
+    "@types/react-copy-to-clipboard": "^5.0.4",
     "@types/react-datepicker": "^4.10.0",
     "@types/react-google-recaptcha": "^2.1.5",
     "@types/react-modal": "^3.13.1"

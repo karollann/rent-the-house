@@ -5,7 +5,7 @@ import livingroom from "../../public/images_450px/livingroom2_450px.jpg";
 
 export const About = () => {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="about">
       <div className={styles.about__section}>
         <div
           className={`${styles["about__container--left"]} ${styles.about__container}`}

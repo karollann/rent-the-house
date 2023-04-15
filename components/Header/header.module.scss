@@ -27,6 +27,15 @@
     transition: background 0.2s linear;
   }
 
+  // $sticky-breakpoint: 32em;
+
+  // // 1. Approximate height of sticky navigation.
+  // [id] {
+  //   @media (min-height: $sticky-breakpoint) {
+  //     scroll-margin-top: 100px; // 1
+  //   }
+  // }
+
   &__title {
     padding: 12px;
     font-size: 24px;

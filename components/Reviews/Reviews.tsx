@@ -5,7 +5,7 @@ import styles from "./reviews.module.scss";
 
 export const Reviews = () => {
   return (
-    <div className={styles.reviews}>
+    <div className={styles.reviews} id="reviews">
       <div className={styles.reviews__headingContainer}>
         <h2 className={styles.reviews__heading}>Reviews</h2>
         <MoreButton

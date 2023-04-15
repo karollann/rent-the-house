@@ -33,7 +33,7 @@ export const Amenities = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={style.amenities}>
+    <div className={style.amenities} id="amenities">
       <h2 className={style.amenities__heading}>Welcome to Getaway Lodge!</h2>
       <ul className={style.amenities__primaryAmenities}>
         {primaryAmenities.map((amenity) => (

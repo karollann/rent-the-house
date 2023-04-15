@@ -12,6 +12,7 @@ import { Reviews } from "@/components/Reviews/Reviews";
 import { MeteoWidget } from "@/components/MeteoWidget/MeteoWidget";
 import { DatePickerComponent } from "@/components/DatePicker/DatePickerComponent";
 import { Gallery } from "@/components/Gallery/Gallery";
+import { Footer } from "@/components/Footer/Footer";
 
 const photoGroup = photos.slice(0, 9);
 
@@ -53,6 +54,7 @@ export default function Home() {
           </div>
           <Gallery photos={photoGroup} />
         </main>
+        <Footer />
       </div>
     </>
   );

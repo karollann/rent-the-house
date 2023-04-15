@@ -17,7 +17,7 @@ export const Gallery = ({ photos }: { photos: Photo[] }) => {
   const slide = allPhotos.map((photo) => ({ ...photo, srcSet: photo.images }));
 
   return (
-    <div className={styles.gallery}>
+    <div className={styles.gallery} id="gallery">
       <div className={styles.gallery__headingContainer}>
         <h2 className={styles.gallery__heading}>Gallery</h2>
         <MoreButton onClick={() => setIndex(0)} text="See more" />

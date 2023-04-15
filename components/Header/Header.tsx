@@ -15,22 +15,22 @@ export const Header = ({ isAboutInView }: HeaderPropsType) => {
     <header className={classes}>
       <p className={styles.header__title}>Getaway Lodge</p>
       <nav className={styles.header__nav}>
-        <a href="#" className={styles.header__link}>
+        <a href="#about" className={styles.header__link}>
           About
         </a>
-        <a href="#" className={styles.header__link}>
+        <a href="#amenities" className={styles.header__link}>
           Amenities
         </a>
         <a href="#" className={styles.header__link}>
           Rates
         </a>
-        <a href="#" className={styles.header__link}>
+        <a href="#gallery" className={styles.header__link}>
           Gallery
         </a>
-        <a href="#" className={styles.header__link}>
+        <a href="#reviews" className={styles.header__link}>
           Reviews
         </a>
-        <a href="#" className={styles.header__link}>
+        <a href="#location" className={styles.header__link}>
           Location
         </a>
         <a

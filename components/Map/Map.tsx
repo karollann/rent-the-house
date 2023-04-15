@@ -5,7 +5,7 @@ export const Map = () => {
   const redOptions = { color: "red" };
 
   return (
-    <div className={styles.mapContainer}>
+    <div className={styles.mapContainer} id="location">
       <h2 className={styles.mapContainer__title}>You will stay here!</h2>
       <h3 className={styles.mapContainer__location}>Giby, Podlaskie, Poland</h3>
       <MapContainer
