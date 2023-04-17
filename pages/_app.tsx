@@ -6,10 +6,11 @@ import type { AppProps } from "next/app";
 
 import { Montserrat } from "next/font/google";
 import { useEffect } from "react";
+import { appWithTranslation } from "next-i18next";
 
 const font = Montserrat({ subsets: ["latin"] });
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     Modal.setAppElement("#__next");
   }, []);
@@ -25,3 +26,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
+
+export default appWithTranslation(App);

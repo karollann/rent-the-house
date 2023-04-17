@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useTranslation } from "next-i18next";
+
 import { ContactFormModal } from "../ContactFormModal/ContactFormModal";
 import styles from "./header.module.scss";
 
 type HeaderPropsType = { isAboutInView: boolean };
 
 export const Header = ({ isAboutInView }: HeaderPropsType) => {
+  const { t } = useTranslation();
   const [contactFormModalIsOpen, setContactFormModalIsOpen] = useState(false);
 
   const classes = !isAboutInView
@@ -16,28 +19,28 @@ export const Header = ({ isAboutInView }: HeaderPropsType) => {
       <p className={styles.header__title}>Getaway Lodge</p>
       <nav className={styles.header__nav}>
         <a href="#about" className={styles.header__link}>
-          About
+          {t("header.about")}
         </a>
         <a href="#amenities" className={styles.header__link}>
-          Amenities
+          {t("header.amenities")}
         </a>
         <a href="#" className={styles.header__link}>
-          Rates
+          {t("header.rates")}
         </a>
         <a href="#gallery" className={styles.header__link}>
-          Gallery
+          {t("header.gallery")}
         </a>
         <a href="#reviews" className={styles.header__link}>
-          Reviews
+          {t("header.reviews")}
         </a>
         <a href="#location" className={styles.header__link}>
-          Location
+          {t("header.location")}
         </a>
         <a
           onClick={() => setContactFormModalIsOpen(true)}
           className={styles.header__link}
         >
-          Contact
+          {t("header.contact")}
         </a>
         <a href="#" className={styles.header__link}>
           <p className={styles.header__bookButtonText}>Book Now</p>

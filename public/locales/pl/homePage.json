@@ -1,0 +1,112 @@
+{
+  "header": {
+    "about": "O nas",
+    "rates": "Stawki",
+    "gallery": "Galeria",
+    "reviews": "Recenzje",
+    "location": "Lokalizacja",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Idealne Miejsce na Twój Pobyt"
+  },
+  "about": {
+    "headingUp": "Świetne miejsce do rekreacji",
+    "descriptionUp": "Drewniany dom nad jeziorem Gieret na skraju Puszczy Augustowskiej. Zapewnia miejsce do spokojnego odpoczynku jak i aktywnego spędzenia czasu. Dom położony na dużej działce, posiada taras z widokiem na jezioro. Chłodne wieczory uprzyjemni relaks przed kominkiem lub pieczenie kiełbasek nad ogniskiem.",
+    "headingDown": "...i odpoczynku",
+    "descriptionDown": "Idealne miejsce dla osób, które chciałby przenieść pracę zdalną bliżej natury – w domu i na części działki działa wi-fi. We wsi (1,6km) dostępna jest plaża z piaskowym i płytkim zejściem do wody."
+  },
+  "amenities": {
+    "heading": "Witaj w Getaway Lodge!",
+    "description": [
+      "Dom posiada przestronny salon z kuchnią, kominkiem i dużym stołem jadalnym. Na parterze znajduje się również kącik wypoczynkowy z TV, kanapą i fotelami.",
+      "Dostępne są również dwa tarasy – jeden z nich zadaszony z widokiem na jezioro, drugi dobrze nasłoneczniony. W domu znajdują się dwie łazienki (prysznic i toaleta w obu) zlokalizowane na parterze oraz pietrze.",
+      "Cztery sypialnie usytuowane są na pierwszym piętrze – z dwóch z nich roztacza się widok na jezioro. Na terenie działki miejsce namsamochody.",
+      "Dostępych jest wiele atrakcji na terenie działki i w okolicy: sporty wodne, wędkarstwo, boisko do badmintona, miejsce na ognisko.",
+      "We wsi (1,6km) dostępna jest plaża z piaskowym i płytkim zejściem do wody oraz ogólnodostępne boiska do piłki nożnej, koszykówki i kort tenisowy.",
+      "Tereny Suwalszczyzny są świetnym miejscem do wycieczek rowerowych, spacerów czy biegania. Jesienią pobliskie lasy są rajem dla grzybiarzy. Doskonała baza wypadowa do wycieczek do Wigierskiego Parku Narodowego, słynnego wiaduktu kolejowego w Stańczykach, parku wodnego w Druskiennikach, Kowna czy Wilna."
+    ],
+    "heading_2": "Gdzie będziesz spać"
+  },
+  "amenitiesModal": {
+    "headings": {
+      "views": "Widoki",
+      "bathroom": "Łazienka",
+      "bedroom": "Sypialnia",
+      "entertainment": "Rozrywka",
+      "homeSafety": "Bezpieczeństwo",
+      "kitchenAndDining": "Kuchnia i przybory kuchenne",
+      "services": "Usługi",
+      "notIncluded": "Nieuwzględnione"
+    },
+    "amenitiesNames": {
+      "dishwasher": "Zmywarka",
+      "inductionStove": "Kuchenka indukcyjna",
+      "kettle": "Czajnik",
+      "coffeeMaker": "Ekspres Przelewowy",
+      "coffee": "Kawa",
+      "wineGlasses": "Kieliszki do wina",
+      "refrigerator": "Lodówka i zamrażarka",
+      "cookingBasics": "Podstawowe przybory kuchenne",
+      "hairDryer": "Suszarka",
+      "cleaning": "Przybory do sprzątania",
+      "hotWater": "Ciepła woda",
+      "bedLinens": "Pościel",
+      "shades": "Zasłony okienne",
+      "dryingRack": "Suszarka do ubrań",
+      "lakeView": "Widok na jezioro",
+      "gardenView": "Widok na ogród",
+      "privatePatio": "Prywatny taras",
+      "privateBackyard": "Prywatny ogród - W pełni ogrodzony",
+      "outdoorFurniture": "Meble ogrodowe",
+      "hammock": "Hamak",
+      "grill": "Grill",
+      "bikes": "Rowery",
+      "books": "Książki",
+      "HDTV": "43 HDTV",
+      "firePit": "Ognisko",
+      "indoorFireplace": "Kominek wewnętrzny na drewno",
+      "electricRadiators": "Grzejniki elektryczne",
+      "smokeAlarm": "Czujnik dymu",
+      "carbonMonoxideAlarm": "Czujnik czadu",
+      "fireExtinguisher": "Gaśnica",
+      "petsAllowed": "Zwierzęta dozwolone",
+      "hostGreets": "Gospodarz Cię wita",
+      "freeParking": "Darmowy parking na terenie obiektu",
+      "washingMachine": "Pralka"
+    }
+  },
+  "primaryAmenityCard": {
+    "8guests": "8 Gości",
+    "4bedrooms": "4 Sypialnie",
+    "5beds": "5 Łóżek",
+    "2bathrooms": "2 Łazienki"
+  },
+  "carousel": {
+    "description": {
+      "bedroom1": "Sypialnia 1",
+      "bedroom2": "Sypialnia 2",
+      "bedroom3": "Sypialnia 3",
+      "bedroom4": "Sypialnia 4"
+    },
+    "bed": {
+      "1doubleBed,1singleBed": "1 podwójne łóżko, 1 pojedyncze łóżko",
+      "1doubleBed": "1 podwójne łóżko",
+      "1queenBed": "1 średnie łóżko"
+    }
+  },
+  "showAll": "Pokaż wszystkie {{numberOfItems}} {{item}}",
+  "seeMore": "Zobacz więcej",
+  "reviews": {
+    "months": { "july": "Lipiec", "august": "Sierpień" },
+    "reviewBody": [
+      "Świetne miejsce i atrakcja! Nasza grupa składała się z 6 osób dorosłych i 2 małych dzieci. Bez problemu zmieścimy kolejną parę dorosłych. Nieruchomość posiada prawie wszystkie udogodnienia, o których można pomyśleć (oprócz pralki), z pięknym, dużym ogrodem. Jedna uwaga - dostęp do jeziora znajduje się w odległości ok. 200m. Pobyt tam jest jak mieszkanie u najlepszego przyjaciela; gospodarze są bardzo przyjaźni i przyjaźni.",
+      "Przestronny dom, bardzo dobrze wyposażony. Dla dwóch rodzin z w sumie 5 małych dzieci w sam raz. Duża działka wokół domu - duży atut przy rozbrykanych małolatach. W domu było wszystko, co potrzebne by miło spędzić czas. Bardzo dobra lokalizacja, z bliskim dostępem do jeziora. Brak jakichkolwiek zastrzeżeń. Tylko dodatkowe pochwały za super kontakt z właścicielami.",
+      "Dom z duszą!!! Piękne drewniane wnętrze z pełnym wyposażeniem czterema pokojami i dwoma łazienkami. Kuchnia dobrze wyposażona niczego nie brakowało, a świeża kawa z palarni La Kafo w Augustowie smakuje wyśmienicie na tarasie z widokiem na jezioro. Ogromny ogród otoczony starymi drzewami zapewnia odpowiednią dawkę prywatności i pozwala odprężyć się i zrelaksować. Pomost, łódka i rowery zapewniają odpowiednią dawkę rozrywki. Szczerze polecam!!!"
+    ]
+  },
+  "map": {
+    "youWillStayHere": "Będziesz mieszkać tutaj!",
+    "location": "Giby, Podlaskie, Polska"
+  }
+}

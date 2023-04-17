@@ -2,6 +2,7 @@ import Modal from "react-modal";
 import { Amenity, amenityCardData } from "../../data";
 import { AmenityCard } from "../AmenityCard/AmenityCard";
 import { CloseButton } from "../CloseButton/CloseButton";
+import { useTranslation } from "next-i18next";
 
 import style from "./amenitiesModal.module.scss";
 
@@ -16,6 +17,7 @@ type AmenityModalCardProps = {
 };
 
 const AmenityModalCard = ({ heading, amenities }: AmenityModalCardProps) => {
+  const { t } = useTranslation();
   return (
     <div>
       <h3 className={style.amenityGroupContainer__heading}>{heading}</h3>
@@ -23,10 +25,10 @@ const AmenityModalCard = ({ heading, amenities }: AmenityModalCardProps) => {
         {amenities.map((amenity) => (
           <AmenityCard
             icon={amenity.icon}
-            name={amenity.name}
+            name={t(amenity.translationKeyName)}
             containerStyle={style.amenityCard}
             headingStyle={style.amenityCard__name}
-            key={amenity.name}
+            key={amenity.translationKeyName}
           />
         ))}
       </ul>
@@ -38,6 +40,8 @@ export const AmenitiesModal = ({
   closeModal,
   modalIsOpen,
 }: AmenitiesModalProps) => {
+  const { t } = useTranslation();
+
   return (
     <Modal
       isOpen={modalIsOpen}
@@ -51,32 +55,41 @@ export const AmenitiesModal = ({
         <CloseButton close={closeModal} />
       </div>
       <h2 className={style.modalTitle}>What we offer</h2>
-      <AmenityModalCard heading="Views" amenities={amenityCardData.views} />
       <AmenityModalCard
-        heading="Bathroom"
+        heading={t("amenitiesModal.headings.views")}
+        amenities={amenityCardData.views}
+      />
+      <AmenityModalCard
+        heading={t("amenitiesModal.headings.bathroom")}
         amenities={amenityCardData.bathroom}
       />
       <AmenityModalCard heading="Bedroom" amenities={amenityCardData.bedroom} />
       <AmenityModalCard
-        heading="Entertainment"
+        heading={t("amenitiesModal.headings.entertainment")}
         amenities={amenityCardData.entertainment}
       />
       <AmenityModalCard
-        heading="Home safety"
+        heading={t("amenitiesModal.headings.homeSafety")}
         amenities={amenityCardData.safety}
       />
       <AmenityModalCard
-        heading="Kitchen and dining"
+        heading={t("amenitiesModal.headings.kitchenAndDining")}
         amenities={amenityCardData.kitchen}
       />
-      <AmenityModalCard heading="Heating" amenities={amenityCardData.heating} />
-      <AmenityModalCard heading="Outdoor" amenities={amenityCardData.outdoor} />
       <AmenityModalCard
-        heading="Services"
+        heading={t("amenitiesModal.headings.heating")}
+        amenities={amenityCardData.heating}
+      />
+      <AmenityModalCard
+        heading={t("amenitiesModal.headings.outdoor")}
+        amenities={amenityCardData.outdoor}
+      />
+      <AmenityModalCard
+        heading={t("amenitiesModal.headings.services")}
         amenities={amenityCardData.services}
       />
       <AmenityModalCard
-        heading="Not Included"
+        heading={t("amenitiesModal.headings.notIncluded")}
         amenities={amenityCardData.notIncluded}
       />
     </Modal>

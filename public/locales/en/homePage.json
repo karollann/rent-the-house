@@ -1,0 +1,113 @@
+{
+  "header": {
+    "about": "About",
+    "amenities": "Amenities",
+    "rates": "Rates",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "location": "Location",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Perfect Place For Your Stay"
+  },
+  "about": {
+    "headingUp": "Ideal for active recreation",
+    "descriptionUp": "Wooden house at Lake Gieret at the edge of the Augustów Forest. It provides a place for a quiet rest and an active time. The house is located on a large plot, has a terrace overlooking the lake. Cool evenings will be pleasant to relax in front of the fireplace or bake sausages over the fire.",
+    "headingDown": "...and relaxation",
+    "descriptionDown": "An ideal place for people who would like to move remote work closer to nature – at home and on a part of the plot there is Wi-Fi. In the village (1,6km) there is a beach with a shallow and sandy access to the water."
+  },
+  "amenities": {
+    "heading": "Welcome to Getaway Lodge!",
+    "description": [
+      "The house has a spacious living room with kitchen, fireplace and a large dining table. On the ground floor there is also a seating area with TV, sofa and armchairs.",
+      "There are also two terraces – one covered overlooking the lake, the other well sunny. In the home there are two bathrooms (shower and toilet in both) located on the ground floor and the first floor.",
+      "Four bedrooms are located on the first floor – two of them offer views of the lake. There is space for cars on the plot.",
+      "There are many attractions on the plot and in the area: water sports, fishing, badminton field, fire pit.",
+      "In the village (1,6km) there is a beach with a shallow and sandy access to the water, and there are also playgrounds for football, basketball and tennis.",
+      "The Suwałki region is a great place for biking, walking or running. In autumn, nearby forests are a paradise for mushroom pickers. An excellent starting point for trips to the Wigry National Park, the famous railway viaduct in Stańczyki, the water park in Druskininkai, Kaunas or Vilnius."
+    ],
+    "heading_2": "Where you'll sleep"
+  },
+  "amenitiesModal": {
+    "headings": {
+      "views": "Views",
+      "bathroom": "Bathroom",
+      "bedroom": "Bedroom",
+      "entertainment": "Entertainment",
+      "homeSafety": "Home safety",
+      "kitchenAndDining": "Kitchen and dining",
+      "services": "Services",
+      "notIncluded": "Not Included"
+    },
+    "amenitiesNames": {
+      "dishwasher": "Dishwasher",
+      "inductionStove": "Induction stove",
+      "kettle": "Kettle",
+      "coffeeMaker": "Coffee maker: pour-over coffee",
+      "coffee": "Coffee",
+      "wineGlasses": "Wine glasses",
+      "refrigerator": "Refrigerator and freezer",
+      "cookingBasics": "Cooking basics",
+      "hairDryer": "Hair dryer",
+      "cleaning": "Cleaning products",
+      "hotWater": "Hot water",
+      "bedLinens": "Bed linens",
+      "shades": "Room-darkening shades",
+      "dryingRack": "Drying rack for clothing",
+      "lakeView": "Lake view",
+      "gardenView": "Garden view",
+      "privatePatio": "Private patio",
+      "privateBackyard": "Private backyard – Fully fenced",
+      "outdoorFurniture": "Outdoor furniture",
+      "hammock": "Hammock",
+      "grill": "BBQ grill",
+      "bikes": "Bikes",
+      "books": "Books and reading material",
+      "HDTV": "43 HDTV with HDMI cable",
+      "firePit": "Fire pit",
+      "indoorFireplace": "Indoor fireplace: wood-burning",
+      "electricRadiators": "Electric radiators",
+      "smokeAlarm": "Smoke alarm",
+      "carbonMonoxideAlarm": "Carbon monoxide alarm",
+      "fireExtinguisher": "Fire extinguisher",
+      "petsAllowed": "Pets allowed",
+      "hostGreets": "Host greets you",
+      "freeParking": "Free parking on premises",
+      "washingMachine": "Washing machine"
+    }
+  },
+  "primaryAmenityCard": {
+    "8guests": "8 Guests",
+    "4bedrooms": "4 Bedrooms",
+    "5beds": "5 Beds",
+    "2bathrooms": "2 Bathrooms"
+  },
+  "carousel": {
+    "description": {
+      "bedroom1": "Bedroom 1",
+      "bedroom2": "Bedroom 2",
+      "bedroom3": "Bedroom 3",
+      "bedroom4": "Bedroom 4"
+    },
+    "bed": {
+      "1doubleBed,1singleBed": "1 double bed, 1 single bed",
+      "1doubleBed": "1 double bed",
+      "1queenBed": "1 queen bed"
+    }
+  },
+  "showAll": "Show all {{numberOfItems}} {{item}}",
+  "seeMore": "See more",
+  "reviews": {
+    "months": { "july": "July", "august": "August" },
+    "reviewBody": [
+      "Great place and experience! We were a group of 6adults and 2 infants. We could easily fit another pair of adults. The estate has almost all the amenities you could think of (apart of washing machine), with beautiful, big garden. One watch-out - the access to lake is approx 200m away. Staying there is like living at your best friend’s place; the hosts are super friendly and welcoming.",
+      "Spacious house, very well-equipped. For two families with a total of 5 infants. A large plot of land around the house is a big draw for the babies. The place had everything I needed to enjoy my time. Very convenient location with close access to the lake. I have no reservations. Just an extra compliment for the great contact with the owners.",
+      "A house with a soul!! Beautiful wooden interior with full equipment of four rooms and two bathrooms. A well-stocked kitchen was well-stocked and the fresh coffee from the La Kafo roastery in Augustow was delicious on the deck overlooking the lake. Surrounded by old trees, the vast garden offers plenty of privacy and a chance to relax and unwind. Dock, boat, and bikes provide the right amount of fun. Highly recommend!!!"
+    ]
+  },
+  "map": {
+    "youWillStayHere": "You will stay here!",
+    "location": "Giby, Podlaskie, Poland"
+  }
+}

@@ -1,9 +1,13 @@
 import { reviewsData } from "@/data";
 import { MoreButton } from "../MoreButton/MoreButton";
 import { ReviewCard } from "../ReviewCard/ReviewCard";
+import { useTranslation } from "next-i18next";
+
 import styles from "./reviews.module.scss";
 
 export const Reviews = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.reviews} id="reviews">
       <div className={styles.reviews__headingContainer}>
@@ -19,13 +23,14 @@ export const Reviews = () => {
             href="https://www.airbnb.com/rooms/48524756/reviews?preview_for_ml=true&source_impression_id=p3_1677939185_b1%2FkbmzwKyMsMPq6"
             target="_blank"
             rel="noopener noreferrer"
-            key={review.reviewBody}
+            key={review.translationKeyReviewBody}
           >
             <ReviewCard
               guestName={review.guestName}
               rating={review.rating}
-              date={review.date}
-              reviewBody={review.reviewBody}
+              month={t(review.translationKeyMonth) || ""}
+              year={review.year}
+              reviewBody={t(review.translationKeyReviewBody) || ""}
             />
           </a>
         ))}

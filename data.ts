@@ -61,7 +61,7 @@ import { Photo } from "react-photo-album";
 
 export type Amenity = {
   icon: (props: SVGProps<SVGSVGElement>) => ReactElement;
-  name: string;
+  translationKeyName: string;
   displayFirst?: boolean;
   highlighted?: boolean;
 };
@@ -82,99 +82,183 @@ type Amenities = Record<AmenityKind, Amenity[]>;
 
 export const amenityCardData: Amenities = {
   kitchen: [
-    { icon: IconDishwasher, name: "Dishwasher", displayFirst: true },
-    { icon: IconInductionStove, name: "Induction stove" },
-    { icon: IconKettle, name: "Kettle" },
+    {
+      icon: IconDishwasher,
+      translationKeyName: "amenitiesModal.amenitiesNames.dishwasher",
+      displayFirst: true,
+    },
+    {
+      icon: IconInductionStove,
+      translationKeyName: "amenitiesModal.amenitiesNames.inductionStove",
+    },
+    {
+      icon: IconKettle,
+      translationKeyName: "amenitiesModal.amenitiesNames.kettle",
+    },
     {
       icon: IconCoffeeMaker,
-      name: "Coffee maker: pour-over coffee",
+      translationKeyName: "amenitiesModal.amenitiesNames.coffeeMaker",
       displayFirst: true,
     },
-    { icon: IconCoffeeBean, name: "Coffee" },
-    { icon: IconWineGlass, name: "Wine glasses" },
-    { icon: IconFridge, name: "Refrigerator and freezer" },
-    { icon: IconKitchenBasics, name: "Cooking basics" },
+    {
+      icon: IconCoffeeBean,
+      translationKeyName: "amenitiesModal.amenitiesNames.coffee",
+    },
+    {
+      icon: IconWineGlass,
+      translationKeyName: "amenitiesModal.amenitiesNames.wineGlasses",
+    },
+    {
+      icon: IconFridge,
+      translationKeyName: "amenitiesModal.amenitiesNames.refrigerator",
+    },
+    {
+      icon: IconKitchenBasics,
+      translationKeyName: "amenitiesModal.amenitiesNames.cookingBasics",
+    },
   ],
   bathroom: [
-    { icon: IconHairDryer, name: "Hair dryer" },
-    { icon: IconCleaningProducts, name: "Cleaning products" },
-    { icon: IconHotWater, name: "Hot water" },
+    {
+      icon: IconHairDryer,
+      translationKeyName: "amenitiesModal.amenitiesNames.hairDryer",
+    },
+    {
+      icon: IconCleaningProducts,
+      translationKeyName: "amenitiesModal.amenitiesNames.cleaning",
+    },
+    {
+      icon: IconHotWater,
+      translationKeyName: "amenitiesModal.amenitiesNames.hotWater",
+    },
   ],
   bedroom: [
-    { icon: IconBedLinens, name: "Bed linens" },
+    {
+      icon: IconBedLinens,
+      translationKeyName: "amenitiesModal.amenitiesNames.bedLinens",
+    },
     {
       icon: IconWindowShades,
-      name: "Room-darkening shades",
+      translationKeyName: "amenitiesModal.amenitiesNames.shades",
       displayFirst: true,
     },
-    { icon: IconDryingRack, name: "Drying rack for clothing" },
+    {
+      icon: IconDryingRack,
+      translationKeyName: "amenitiesModal.amenitiesNames.dryingRack",
+    },
   ],
   views: [
     {
       icon: IconLake,
-      name: "Lake view",
+      translationKeyName: "amenitiesModal.amenitiesNames.lakeView",
       displayFirst: true,
     },
     {
       icon: IconBackyard,
-      name: "Garden view",
+      translationKeyName: "amenitiesModal.amenitiesNames.gardenView",
     },
   ],
   outdoor: [
     {
       icon: IconBalcony,
-      name: "Private patio",
+      translationKeyName: "amenitiesModal.amenitiesNames.privatePatio",
     },
     {
       icon: IconBackyard,
-      name: "Private backyard – Fully fenced",
+      translationKeyName: "amenitiesModal.amenitiesNames.privateBackyard",
       highlighted: true,
     },
     {
       icon: IconOutdoorFurniture,
-      name: "Outdoor furniture",
+      translationKeyName: "amenitiesModal.amenitiesNames.outdoorFurniture",
       displayFirst: true,
     },
-    { icon: IconHammock, name: "Hammock" },
-    { icon: IconGrill, name: "BBQ grill", displayFirst: true },
-    { icon: IconBike, name: "Bikes", displayFirst: true },
+    {
+      icon: IconHammock,
+      translationKeyName: "amenitiesModal.amenitiesNames.hammock",
+    },
+    {
+      icon: IconGrill,
+      translationKeyName: "amenitiesModal.amenitiesNames.grill",
+      displayFirst: true,
+    },
+    {
+      icon: IconBike,
+      translationKeyName: "amenitiesModal.amenitiesNames.bikes",
+      displayFirst: true,
+    },
   ],
   entertainment: [
-    { icon: IconBook, name: "Books and reading material" },
-    { icon: IconTelevision, name: "43 HDTV with HDMI cable" },
-    { icon: IconWiFi, name: "WiFi", highlighted: true },
-    { icon: IconFirePit, name: "Fire pit", displayFirst: true },
+    {
+      icon: IconBook,
+      translationKeyName: "amenitiesModal.amenitiesNames.books",
+    },
+    {
+      icon: IconTelevision,
+      translationKeyName: "amenitiesModal.amenitiesNames.HDTV",
+    },
+    { icon: IconWiFi, translationKeyName: "WiFi", highlighted: true },
+    {
+      icon: IconFirePit,
+      translationKeyName: "amenitiesModal.amenitiesNames.firePit",
+      displayFirst: true,
+    },
   ],
   heating: [
     {
       icon: IconFireplace,
-      name: "Indoor fireplace: wood-burning",
+      translationKeyName: "amenitiesModal.amenitiesNames.indoorFireplace",
       displayFirst: true,
     },
-    { icon: IconRadiator, name: "Electric radiators" },
+    {
+      icon: IconRadiator,
+      translationKeyName: "amenitiesModal.amenitiesNames.electricRadiators",
+    },
   ],
   safety: [
-    { icon: IconSmokeDetector, name: "Smoke alarm" },
-    { icon: IconCarbonMonoxideDetector, name: "Carbon monoxide alarm" },
-    { icon: IconFireExtinguisher, name: "Fire extinguisher" },
+    {
+      icon: IconSmokeDetector,
+      translationKeyName: "amenitiesModal.amenitiesNames.smokeAlarm",
+    },
+    {
+      icon: IconCarbonMonoxideDetector,
+      translationKeyName:
+        "amenitiesModal.amenitiesNames.carbonMonoxideDetector",
+    },
+    {
+      icon: IconFireExtinguisher,
+      translationKeyName: "amenitiesModal.amenitiesNames.fireExtinguisher",
+    },
   ],
   services: [
-    { icon: IconPet, name: "Pets allowed", highlighted: true },
-    { icon: IconHostGreets, name: "Host greets you", displayFirst: true },
+    {
+      icon: IconPet,
+      translationKeyName: "amenitiesModal.amenitiesNames.petsAllowed",
+      highlighted: true,
+    },
+    {
+      icon: IconHostGreets,
+      translationKeyName: "amenitiesModal.amenitiesNames.hostGreets",
+      displayFirst: true,
+    },
     {
       icon: IconParking,
-      name: "Free parking on premises",
+      translationKeyName: "amenitiesModal.amenitiesNames.freeParking",
       highlighted: true,
     },
   ],
-  notIncluded: [{ icon: IconWashingMachine, name: "Washing machine" }],
+  notIncluded: [
+    {
+      icon: IconWashingMachine,
+      translationKeyName: "amenitiesModal.amenitiesNames.washingMachine",
+    },
+  ],
 };
 
 export const primaryAmenityCardData = [
-  { icon: IconPeople, name: "8 Guests" },
-  { icon: IconBedroom, name: "4 Bedrooms" },
-  { icon: IconBedLinens, name: "5 Beds" },
-  { icon: IconBathroom, name: "2 Bathrooms" },
+  { icon: IconPeople, translationKeyName: "primaryAmenityCard.8guests" },
+  { icon: IconBedroom, translationKeyName: "primaryAmenityCard.4bedrooms" },
+  { icon: IconBedLinens, translationKeyName: "primaryAmenityCard.5beds" },
+  { icon: IconBathroom, translationKeyName: "primaryAmenityCard.2bathrooms" },
 ];
 
 export type carouselDataType = {
@@ -194,34 +278,35 @@ export const carouselData: carouselDataType[] = [
   { photoImport: Bedroom4, description: "Bedroom 4", bed: "1 queen bed" },
 ];
 
-export type reviewDataType = {
+export type ReviewDataType = {
   guestName: string;
-  date: string;
+  translationKeyMonth: string;
+  year: string;
   rating: number;
-  reviewBody: string;
+  translationKeyReviewBody: string;
 };
 
-export const reviewsData: reviewDataType[] = [
+export const reviewsData: ReviewDataType[] = [
   {
     guestName: "Adam",
-    date: "July 2022",
+    translationKeyMonth: "reviews.months.july",
+    year: "2022",
     rating: 5,
-    reviewBody:
-      "Great place and experience! We were a group of 6adults and 2 infants. We could easily fit another pair of adults. The estate has almost all the amenities you could think of (apart of washing machine), with beautiful, big garden. One watch-out - the access to lake is approx 200m away. Staying there is like living at your best friend’s place; the hosts are super friendly and welcoming.",
+    translationKeyReviewBody: "reviews.reviewBody.0",
   },
   {
     guestName: "Bartosz",
-    date: "August 2022",
+    translationKeyMonth: "reviews.months.august",
+    year: "2022",
     rating: 5,
-    reviewBody:
-      "Przestronny dom, bardzo dobrze wyposażony. Dla dwóch rodzin z w sumie 5 małych dzieci w sam raz. Duża działka wokół domu - duży atut przy rozbrykanych małolatach. W domu było wszystko, co potrzebne by miło spędzić czas. Bardzo dobra lokalizacja, z bliskim dostępem do jeziora. Brak jakichkolwiek zastrzeżeń. Tylko dodatkowe pochwały za super kontakt z właścicielami.",
+    translationKeyReviewBody: "reviews.reviewBody.1",
   },
   {
     guestName: "Dominik",
-    date: "August 2022",
+    translationKeyMonth: "reviews.months.august",
+    year: "2022",
     rating: 5,
-    reviewBody:
-      "Dom z duszą!!! Piękne drewniane wnętrze z pełnym wyposażeniem czterema pokojami i dwoma łazienkami. Kuchnia dobrze wyposażona niczego nie brakowało, a świeża kawa z palarni La Kafo w Augustowie smakuje wyśmienicie na tarasie z widokiem na jezioro. Ogromny ogród otoczony starymi drzewami zapewnia odpowiednią dawkę prywatności i pozwala odprężyć się i zrelaksować. Pomost, łódka i rowery zapewniają odpowiednią dawkę rozrywki. Szczerze polecam!!!",
+    translationKeyReviewBody: "reviews.reviewBody.2",
   },
 ];
 

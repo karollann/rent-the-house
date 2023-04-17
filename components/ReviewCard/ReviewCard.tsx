@@ -1,17 +1,28 @@
 import styles from "./reviewCard.module.scss";
-import { reviewDataType } from "@/data";
 import IconStar from "../../components/Icons/IconStar";
+
+type ReviewCardProps = {
+  guestName: string;
+  month?: string;
+  year: string;
+  rating: number;
+  reviewBody?: string;
+};
 
 export const ReviewCard = ({
   guestName,
-  date,
+  month,
+  year,
   rating,
   reviewBody,
-}: reviewDataType) => {
+}: ReviewCardProps) => {
   return (
     <div className={styles.reviewCard}>
       <h3 className={styles.reviewCard__guestName}>{guestName}</h3>
-      <h4 className={styles.reviewCard__date}>{date}</h4>
+      <h4 className={styles.reviewCard__date}>
+        {month}
+        {year}
+      </h4>
       <div>
         {Array(5)
           .fill("")

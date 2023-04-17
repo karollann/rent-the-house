@@ -13,6 +13,16 @@ import { MeteoWidget } from "@/components/MeteoWidget/MeteoWidget";
 import { DatePickerComponent } from "@/components/DatePicker/DatePickerComponent";
 import { Gallery } from "@/components/Gallery/Gallery";
 import { Footer } from "@/components/Footer/Footer";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["homePage"])),
+      // Will be passed to the page component as props
+    },
+  };
+}
 
 const photoGroup = photos.slice(0, 9);
 

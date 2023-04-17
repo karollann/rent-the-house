@@ -1,13 +1,14 @@
 import styles from "./map.module.scss";
 import { CircleMarker, MapContainer, Popup, TileLayer } from "react-leaflet";
+import { useTranslation } from "next-i18next";
 
 export const Map = () => {
-  const redOptions = { color: "red" };
+  const { t } = useTranslation();
 
   return (
     <div className={styles.mapContainer} id="location">
-      <h2 className={styles.mapContainer__title}>You will stay here!</h2>
-      <h3 className={styles.mapContainer__location}>Giby, Podlaskie, Poland</h3>
+      <h2 className={styles.mapContainer__title}>{t("map.youWillStayHere")}</h2>
+      <h3 className={styles.mapContainer__location}>{t("map.location")}</h3>
       <MapContainer
         center={[54.03692559547879, 23.32998828469203]}
         zoom={14}
@@ -20,10 +21,10 @@ export const Map = () => {
         />
         <CircleMarker
           center={[54.03692559547879, 23.32998828469203]}
-          pathOptions={redOptions}
+          pathOptions={{ color: "black", weight: 2 }}
           radius={20}
         >
-          <Popup>You'll stay here!</Popup>
+          <Popup>{t("youWillStayHere")}</Popup>
         </CircleMarker>
       </MapContainer>
     </div>

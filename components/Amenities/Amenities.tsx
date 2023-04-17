@@ -6,17 +6,20 @@ import { ReactElement, ReactNode, SVGProps, useState } from "react";
 import { HighlightedAmenity } from "../HighlightedAmenity/HighlightedAmenity";
 import { ShowMoreButton } from "../../components/ShowMoreButton/ShowMoreButton";
 import { Slider } from "@/components/Carousel/Carousel";
+import { useTranslation } from "next-i18next";
 
 import style from "./amenities.module.scss";
 
 type AmenitiesArr = {
   icon: (props: SVGProps<SVGSVGElement>) => ReactElement;
-  name: string;
+  translationKeyName: string;
   highlighted?: boolean;
   displayFirst?: boolean;
 }[];
 
 export const Amenities = () => {
+  const { t } = useTranslation();
+
   const allAmenities: AmenitiesArr = Object.values(amenityCardData).flat();
 
   const primaryAmenities: AmenitiesArr = Object.values(
@@ -34,60 +37,48 @@ export const Amenities = () => {
 
   return (
     <div className={style.amenities} id="amenities">
-      <h2 className={style.amenities__heading}>Welcome to Getaway Lodge!</h2>
+      <h2 className={style.amenities__heading}>{t("amenities.heading")}</h2>
       <ul className={style.amenities__primaryAmenities}>
         {primaryAmenities.map((amenity) => (
           <AmenityCard
             containerStyle={style.amenityCard}
             headingStyle={style.amenityCard__name}
             icon={amenity.icon}
-            name={amenity.name}
-            key={amenity.name}
+            name={t(amenity.translationKeyName)}
+            key={amenity.translationKeyName}
           />
         ))}
       </ul>
       <div className={style.amenities__textContainer}>
         <p className={style.amenities__text}>
-          Dom posiada przestronny salon z kuchnią, kominkiem i dużym stołem
-          jadalnym. Na parterze znajduje się również kącik wypoczynkowy z TV,
-          kanapą i fotelami.
+          {t("amenities.description.0")}
           <br />
-          Dostępne są również dwa tarasy – jeden z nich zadaszony z widokiem na
-          jezioro, drugi dobrze nasłoneczniony. W domu znajdują się dwie
-          łazienki (prysznic i toaleta w obu) zlokalizowane na parterze oraz
-          pietrze.
+          {t("amenities.description.1")}
+
           <br />
-          Cztery sypialnie usytuowane są na pierwszym piętrze – z dwóch z nich
-          roztacza się widok na jezioro. Na terenie działki miejsce na
-          samochody.
+          {t("amenities.description.2")}
+
           <br />
-          Dostępych jest wiele atrakcji na terenie działki i w okolicy: sporty
-          wodne, wędkarstwo, boisko do badmintona, miejsce na ognisko.
+          {t("amenities.description.3")}
         </p>
         <p className={style.amenities__text}>
-          We wsi (1,6km) dostępna jest plaża z piaskowym i płytkim zejściem do
-          wody oraz ogólnodostępne boiska do piłki nożnej, koszykówki i kort
-          tenisowy.
+          {t("amenities.description.4")}
           <br />
-          Tereny Suwalszczyzny są świetnym miejscem do wycieczek rowerowych,
-          spacerów czy biegania. Jesienią pobliskie lasy są rajem dla
-          grzybiarzy. Doskonała baza wypadowa do wycieczek do Wigierskiego Parku
-          Narodowego, słynnego wiaduktu kolejowego w Stańczykach, parku wodnego
-          w Druskiennikach, Kowna czy Wilna.
+          {t("amenities.description.5")}
         </p>
       </div>
       <div className={style.amenities__highlitedAmenities}>
         {highlightedAmenities.map((amenity) => (
           <HighlightedAmenity
             icon={amenity.icon}
-            name={amenity.name}
-            key={amenity.name}
+            name={t(amenity.translationKeyName)}
+            key={amenity.translationKeyName}
           />
         ))}
       </div>
       <div className={style.amenities__roomsContainer}>
         <h2 className={style.amenities__roomsContainerHeading}>
-          Where you'll sleep
+          {t("amenities.heading_2")}
         </h2>
         <Slider />
       </div>
@@ -99,8 +90,8 @@ export const Amenities = () => {
               containerStyle={style.amenityCard}
               headingStyle={style.amenityCard__name}
               icon={amenity.icon}
-              name={amenity.name}
-              key={amenity.name}
+              name={t(amenity.translationKeyName)}
+              key={amenity.translationKeyName}
             />
           ))}
         </ul>

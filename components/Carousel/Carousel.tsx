@@ -5,6 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 import { useWindowSize } from "../../hooks/useWindowSize";
 
 import carouselStyles from "./carouselContainer.module.scss";
+import { useTranslation } from "next-i18next";
 
 const BREAKPOINTS: Record<string, number> = {
   desktop: 1300,
@@ -42,6 +43,7 @@ const getScreenSize = (
 export const Slider = () => {
   const width = useWindowSize().width;
   const screenSize = getScreenSize(width);
+  const { t } = useTranslation();
 
   return (
     <Carousel
@@ -69,8 +71,8 @@ export const Slider = () => {
           <CarouselCard
             key={i.description}
             photoImport={i.photoImport}
-            bed={i.bed}
-            description={i.description}
+            bed={t(i.bed)}
+            description={t(i.description)}
           />
         );
       })}
