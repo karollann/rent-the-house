@@ -15,7 +15,7 @@ import { Gallery } from "@/components/Gallery/Gallery";
 import { Footer } from "@/components/Footer/Footer";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ["homePage"])),
