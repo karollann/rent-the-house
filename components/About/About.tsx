@@ -7,6 +7,8 @@ import { useTranslation } from "next-i18next";
 export const About = () => {
   const { t } = useTranslation();
 
+  console.log("werks");
+
   return (
     <div className={styles.about} id="about">
       <div className={styles.about__section}>
