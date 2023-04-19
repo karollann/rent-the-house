@@ -99,6 +99,7 @@
   "showAll": "Show all {{numberOfItems}} {{item}}",
   "seeMore": "See more",
   "reviews": {
+    "review": "Reviews",
     "months": { "july": "July", "august": "August" },
     "reviewBody": [
       "Great place and experience! We were a group of 6adults and 2 infants. We could easily fit another pair of adults. The estate has almost all the amenities you could think of (apart of washing machine), with beautiful, big garden. One watch-out - the access to lake is approx 200m away. Staying there is like living at your best friend’s place; the hosts are super friendly and welcoming.",
@@ -109,5 +110,21 @@
   "map": {
     "youWillStayHere": "You will stay here!",
     "location": "Giby, Podlaskie, Poland"
+  },
+  "gallery": "Gallery",
+  "clickToCopyEmail": "Click to copy email",
+  "feelsLike": "Feels like",
+  "contactForm": {
+    "contactUs": "Contact us",
+    "name": "Name",
+    "message": "Message",
+    "send": "Send"
+  },
+  "footer": {
+    "about": "About",
+    "amenities": "Amenities",
+    "reviews": "Reviews",
+    "location": "Location",
+    "contact": "Kontakt"
   }
 }

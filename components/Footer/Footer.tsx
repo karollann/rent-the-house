@@ -5,10 +5,12 @@ import IconCheckMark from "../Icons/IconCheckMark/IconCheckMark";
 import style from "./footer.module.scss";
 import { ContactFormModal } from "../ContactFormModal/ContactFormModal";
 import { copyTextToClipboard } from "@/utils";
+import { useTranslation } from "next-i18next";
 
 export const Footer = () => {
   const [contactFormModalIsOpen, setContactFormModalIsOpen] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
+  const { t } = useTranslation();
 
   const handleCopyClick = async () => {
     try {
@@ -30,20 +32,20 @@ export const Footer = () => {
           <ul className={style.footer__linksList}>
             <li className={style.footer__listElement}>
               <button onClick={() => setContactFormModalIsOpen(true)}>
-                Contact
+                {t("footer.contact")}
               </button>
             </li>
             <li className={style.footer__listElement}>
-              <a href="#about">About</a>
+              <a href="#about">{t("footer.about")}</a>
             </li>
             <li className={style.footer__listElement}>
-              <a href="#amenities">Amenities</a>
+              <a href="#amenities">{t("footer.amenities")}</a>
             </li>
             <li className={style.footer__listElement}>
-              <a href="#reviews">Reviews</a>
+              <a href="#reviews">{t("footer.reviews")}</a>
             </li>
             <li className={style.footer__listElement}>
-              <a href="#location">Location</a>
+              <a href="#location">{t("footer.location")}</a>
             </li>
           </ul>
         </div>
@@ -64,7 +66,7 @@ export const Footer = () => {
             <div className={style.tooltip}>
               <div className={style.top}>
                 {!isCopied ? (
-                  <p className={style.tooltip__text}>Click to copy email</p>
+                  <p className={style.tooltip__text}>{t("clickToCopyEmail")}</p>
                 ) : (
                   <IconCheckMark width={"24px"} height={"24px"} />
                 )}

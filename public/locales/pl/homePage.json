@@ -1,6 +1,7 @@
 {
   "header": {
     "about": "O nas",
+    "amenities": "Wyposażenie",
     "rates": "Stawki",
     "gallery": "Galeria",
     "reviews": "Recenzje",
@@ -98,6 +99,7 @@
   "showAll": "Pokaż wszystkie {{numberOfItems}} {{item}}",
   "seeMore": "Zobacz więcej",
   "reviews": {
+    "review": "Opinie",
     "months": { "july": "Lipiec", "august": "Sierpień" },
     "reviewBody": [
       "Świetne miejsce i atrakcja! Nasza grupa składała się z 6 osób dorosłych i 2 małych dzieci. Bez problemu zmieścimy kolejną parę dorosłych. Nieruchomość posiada prawie wszystkie udogodnienia, o których można pomyśleć (oprócz pralki), z pięknym, dużym ogrodem. Jedna uwaga - dostęp do jeziora znajduje się w odległości ok. 200m. Pobyt tam jest jak mieszkanie u najlepszego przyjaciela; gospodarze są bardzo przyjaźni i przyjaźni.",
@@ -108,5 +110,20 @@
   "map": {
     "youWillStayHere": "Będziesz mieszkać tutaj!",
     "location": "Giby, Podlaskie, Polska"
+  },
+  "gallery": "Galeria",
+  "clickToCopyEmail": "Skopiuj email",
+  "feelsLike": "Odczuwalna",
+  "contactForm": {
+    "contactUs": "Skontaktuj się z nami",
+    "name": "Imię",
+    "message": "Wiadomość",
+    "send": "Wyślij"
+  },
+  "footer": {
+    "about": "O nas",
+    "amenities": "Wyposażenie",
+    "reviews": "Recenzje",
+    "location": "Lokalizacja"
   }
 }

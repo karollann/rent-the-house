@@ -11,10 +11,10 @@ export const Reviews = () => {
   return (
     <div className={styles.reviews} id="reviews">
       <div className={styles.reviews__headingContainer}>
-        <h2 className={styles.reviews__heading}>Reviews</h2>
+        <h2 className={styles.reviews__heading}>{t("reviews.review")}</h2>
         <MoreButton
           href="https://www.airbnb.com/rooms/48524756/reviews?preview_for_ml=true&source_impression_id=p3_1677939185_b1%2FkbmzwKyMsMPq6"
-          text="See more"
+          text={t("seeMore")}
         />
       </div>
       <div className={styles.reviewsCards}>

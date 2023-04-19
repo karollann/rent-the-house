@@ -3,6 +3,8 @@ import style from "./contactFormModal.module.scss";
 import { CloseButton } from "../CloseButton/CloseButton";
 import { useRef, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "next-i18next";
+
 // import ReCAPTCHA from "react-google-recaptcha";
 
 type ContactFormModalProps = {
@@ -14,14 +16,13 @@ export const ContactFormModal = ({
   modalIsOpen,
   closeModal,
 }: ContactFormModalProps) => {
+  const { t } = useTranslation();
+
   const formRef = useRef<HTMLFormElement>(null);
   // const captchaRef = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("dh");
-
-    console.log(process.env.NEXT_PUBLIC_SERVICE_ID, formRef.current);
 
     if (
       process.env.NEXT_PUBLIC_SERVICE_ID &&
@@ -62,7 +63,9 @@ export const ContactFormModal = ({
     >
       <div className={style.contactFormContainer}>
         <div className={style.contactFormContainer__headingContainer}>
-          <h2 className={style.contactFormContainer__heading}>Contact us</h2>
+          <h2 className={style.contactFormContainer__heading}>
+            {t("contactForm.contactUs")}
+          </h2>
           <CloseButton close={closeModal} />
         </div>
         <form
@@ -78,7 +81,7 @@ export const ContactFormModal = ({
               required
             ></input>
             <label className={style.form__label} htmlFor="name">
-              Name
+              {t("contactForm.name")}
             </label>
           </div>
           <div className={style.form__group}>
@@ -103,7 +106,7 @@ export const ContactFormModal = ({
               cols={40}
             ></textarea>
             <label className={style.form__label} htmlFor="message">
-              Message
+              {t("contactForm.message")}
             </label>
           </div>
           {/* {process.env.NEXT_PUBLIC_SITE_KEY && (
@@ -117,7 +120,7 @@ export const ContactFormModal = ({
             type="submit"
             value="send"
           >
-            Send
+            {t("contactForm.send")}
           </button>
         </form>
       </div>

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { meteoWidgetIcons } from "@/data";
 import IconWind from "../../components/Icons/IconsMeteo/IconWind";
 import IconMapPin from "../../components/Icons/IconMapPin";
+import { useTranslation } from "next-i18next";
+import { language } from "@/utils";
 
 import styles from "./meteoWidget.module.scss";
 
@@ -40,7 +42,7 @@ const getMeteoData = async ({
 }) => {
   try {
     const response = await fetch(
-      "https://api.openweathermap.org/data/2.5/weather?lat=54.04&lon=23.36&exclude=minutely,hourly,daily,alerts&units=metric&appid=fa70d275ae14b754a28548e31f8b3047"
+      `https://api.openweathermap.org/data/2.5/weather?lat=54.04&lon=23.36&exclude=minutely,hourly,daily,alerts&units=metric&appid=fa70d275ae14b754a28548e31f8b3047&lang=${language}`
     );
     if (!response.ok) {
       throw new Error(
@@ -60,6 +62,7 @@ export const MeteoWidget = () => {
   const [data, setData] = useState<DataType | null>();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+  const { t } = useTranslation();
 
   useEffect(() => {
     setIsLoading(true);
@@ -113,7 +116,7 @@ export const MeteoWidget = () => {
             {weatherDescUpperCased}
           </p>
           <p className={styles.meteoWidget__feelsLike}>
-            Feels like {feelsLikeTemp} °C
+            {t("feelsLike")} {feelsLikeTemp} °C
           </p>
           <div className={styles.meteoWidget__windContainer}>
             <IconWind width="32px" height="32px" color="#222222" />
