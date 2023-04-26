@@ -108,7 +108,14 @@ export const MeteoWidget = () => {
       </div>
       <div className={styles.meteoWidget__infoContainer}>
         <div className={styles.meteoWidget__tempContainer}>
-          {Icon && <Icon width="32px" height="32px" color="black" />}
+          {Icon && (
+            <Icon
+              width="32px"
+              height="32px"
+              color="black"
+              className={styles.meteoWidget__icon}
+            />
+          )}
           <p className={styles.meteoWidget__temp}>{currentTemp} °C</p>
         </div>
         <div className={styles.meteoWidget__weatherDescriptionContainer}>
@@ -119,7 +126,12 @@ export const MeteoWidget = () => {
             {t("feelsLike")} {feelsLikeTemp} °C
           </p>
           <div className={styles.meteoWidget__windContainer}>
-            <IconWind width="32px" height="32px" color="#222222" />
+            <IconWind
+              width="32px"
+              height="32px"
+              color="#222222"
+              className={styles.meteoWidget__icon}
+            />
             <p className={styles.meteoWidget__windSpeed}>{windSpeed} m/s</p>
           </div>
         </div>

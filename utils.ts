@@ -13,5 +13,3 @@ export const copyTextToClipboard = async (text: string) => {
 export const language = isBrowser
   ? window.navigator.language.slice(0, 2)
   : DEFAULT_LANGUAGE;
-
-console.log("language", language);

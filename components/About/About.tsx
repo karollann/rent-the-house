@@ -7,11 +7,9 @@ import { useTranslation } from "next-i18next";
 export const About = () => {
   const { t } = useTranslation();
 
-  console.log("werks");
-
   return (
     <div className={styles.about} id="about">
-      <div className={styles.about__section}>
+      <div className={`${styles["about__section--first"]}`}>
         <div
           className={`${styles["about__container--left"]} ${styles.about__container}`}
         >
@@ -22,10 +20,24 @@ export const About = () => {
             {t("about.descriptionUp")}
           </p>
         </div>
-        <Image className={styles.about__image} src={lake} alt="" />
+        <Image
+          className={styles.about__image}
+          src={lake}
+          alt="Picture of the nearby lake"
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+        />
       </div>
-      <div className={styles.about__section}>
-        <Image className={styles.about__image} src={livingroom} alt="" />
+      <div className={`${styles["about__section--second"]}`}>
+        <Image
+          className={styles.about__image}
+          src={livingroom}
+          alt="Picture of the livingrom in the house"
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+        />
         <div
           className={`${styles["about__container--right"]} ${styles.about__container}`}
         >

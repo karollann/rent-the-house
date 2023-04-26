@@ -4,6 +4,8 @@
   align-items: center;
   position: sticky;
   top: 100px;
+  // height: min-content;
+  // width: auto;
   padding: 12px;
   border: 1px solid;
   border-radius: 24px;
@@ -12,9 +14,6 @@
   &__heading {
     font-weight: 500;
     padding-bottom: 8px;
-  }
-  &__label {
-    // padding-top: 8px;
   }
 
   &__bookButton {
@@ -42,5 +41,16 @@
 
   &__inputContainer {
     margin: 8px 0;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .datePicker {
+    &__heading {
+      font-size: 16px;
+    }
+    &__label {
+      font-size: 14px;
+    }
   }
 }

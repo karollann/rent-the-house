@@ -711,3 +711,18 @@ export const photos: Photo[] = [
     ],
   },
 ];
+
+type MobileHeaderMenuElementDataType = {
+  link: string;
+  translationKey: string;
+  id: string;
+};
+
+export const mobileHeaderMenuElementData: MobileHeaderMenuElementDataType[] = [
+  { link: "#about", translationKey: "header.about", id: "about" },
+  { link: "#amenities", translationKey: "header.amenities", id: "amenities" },
+  { link: "#rates", translationKey: "header.rates", id: "rates" },
+  { link: "#gallery", translationKey: "header.gallery", id: "gallery" },
+  { link: "#reviews", translationKey: "header.reviews", id: "reviews" },
+  { link: "#location", translationKey: "header.location", id: "location" },
+];

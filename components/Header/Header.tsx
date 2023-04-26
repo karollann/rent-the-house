@@ -18,33 +18,47 @@ export const Header = ({ isAboutInView }: HeaderPropsType) => {
     <header className={classes}>
       <p className={styles.header__title}>Getaway Lodge</p>
       <nav className={styles.header__nav}>
-        <a href="#about" className={styles.header__link}>
-          {t("header.about")}
-        </a>
-        <a href="#amenities" className={styles.header__link}>
-          {t("header.amenities")}
-        </a>
-        <a href="#" className={styles.header__link}>
-          {t("header.rates")}
-        </a>
-        <a href="#gallery" className={styles.header__link}>
-          {t("header.gallery")}
-        </a>
-        <a href="#reviews" className={styles.header__link}>
-          {t("header.reviews")}
-        </a>
-        <a href="#location" className={styles.header__link}>
-          {t("header.location")}
-        </a>
-        <a
-          onClick={() => setContactFormModalIsOpen(true)}
-          className={styles.header__link}
-        >
-          {t("header.contact")}
-        </a>
-        <a href="#" className={styles.header__link}>
+        <li className={styles.header__item}>
+          <a href="#about" className={styles.header__link}>
+            {t("header.about")}
+          </a>
+        </li>
+        <li className={styles.header__item}>
+          <a href="#amenities" className={styles.header__link}>
+            {t("header.amenities")}
+          </a>
+        </li>
+        <li className={styles.header__item}>
+          <a href="#" className={styles.header__link}>
+            {t("header.rates")}
+          </a>
+        </li>
+        <li className={styles.header__item}>
+          <a href="#gallery" className={styles.header__link}>
+            {t("header.gallery")}
+          </a>
+        </li>
+        <li className={styles.header__item}>
+          <a href="#reviews" className={styles.header__link}>
+            {t("header.reviews")}
+          </a>
+        </li>
+        <li className={styles.header__item}>
+          <a href="#location" className={styles.header__link}>
+            {t("header.location")}
+          </a>
+        </li>
+        <li className={styles.header__item}>
+          <a
+            onClick={() => setContactFormModalIsOpen(true)}
+            className={styles.header__link}
+          >
+            {t("header.contact")}
+          </a>
+        </li>
+        {/* <a href="#" className={styles.header__link}>
           <p className={styles.header__bookButtonText}>Book Now</p>
-        </a>
+        </a> */}
       </nav>
       <ContactFormModal
         modalIsOpen={contactFormModalIsOpen}

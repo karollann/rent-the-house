@@ -30,8 +30,6 @@ export const ContactFormModal = ({
       formRef.current &&
       process.env.NEXT_PUBLIC_USER_ID
     ) {
-      console.log("sdmkf");
-
       emailjs
         .sendForm(
           process.env.NEXT_PUBLIC_SERVICE_ID,
