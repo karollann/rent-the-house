@@ -1,29 +1,34 @@
-import { MouseEvent, MouseEventHandler, useState } from "react";
+import { MouseEvent, useState } from "react";
 import { useTranslation } from "next-i18next";
 
 import { ContactFormModal } from "../ContactFormModal/ContactFormModal";
 import styles from "./headerMobile.module.scss";
 import { mobileHeaderMenuElementData } from "@/data";
 import { MobileHeaderMenuElement } from "../MobileHeaderMenuElement";
+import { MobileHeaderMenuButton } from "../MobileHeaderMenuButton/MobileHeaderMenuButton";
+// import { LogoMobile } from "../LogoMobile/LogoMobile";
 
-export const HeaderMobile = () => {
+type HeaderPropsType = { isAboutInView: boolean };
+
+export const HeaderMobile = ({ isAboutInView }: HeaderPropsType) => {
   const { t } = useTranslation();
   const [contactFormModalIsOpen, setContactFormModalIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuRemoved, setIsMenuRemoved] = useState(true);
 
   const handleClickToggleMenu = (e: MouseEvent<HTMLElement>) => {
     e.preventDefault();
-    setIsMenuOpen(!isMenuOpen);
 
     const html = document.querySelector("html");
 
-    !isMenuOpen
-      ? html?.classList.add("disable-scroll")
-      : html?.classList.remove("disable-scroll");
-  };
+    if (!isMenuOpen) {
+      html?.classList.add("disable-scroll");
+      setIsMenuRemoved(false);
+    } else {
+      html?.classList.remove("disable-scroll");
+    }
 
-  const handleClick = (e: MouseEvent<HTMLUListElement>) => {
-    handleClickToggleMenu(e);
+    setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
   };
 
   const closeMenuAndOpenModal = (e: MouseEvent<HTMLElement>) => {
@@ -34,26 +39,41 @@ export const HeaderMobile = () => {
     }, 750);
   };
 
+  const classes = !isAboutInView
+    ? `${styles.header} ${styles.header__headerSticky}`
+    : `${styles.header}`;
+
   return (
-    <header className={styles.header}>
+    <header className={classes}>
+      <p className={styles.header__title}>Getaway Lodge</p>
+
+      <MobileHeaderMenuButton
+        handleClickToggleMenu={handleClickToggleMenu}
+        isMenuOpen={isMenuOpen}
+      />
+
       <nav
         aria-hidden={!isMenuOpen}
         role="navigation"
-        className={isMenuOpen ? `${styles["nav--open"]}` : ""}
+        className={`${isMenuRemoved ? styles["nav--removed"] : ""} ${
+          isMenuOpen ? styles["nav--open"] : styles["nav--closed"]
+        }`}
+        onAnimationEnd={(e) => {
+          if (e.animationName.includes("scaleOut")) {
+            setIsMenuRemoved(true);
+          }
+        }}
       >
         <ul
-          className={
-            !isMenuOpen
-              ? `${styles.nav__menu} ${styles["nav__closed"]}`
-              : styles.nav__menu
-          }
+          className={styles.nav__menu}
           aria-label="main navigation"
           hidden={!isMenuOpen}
           aria-expanded={isMenuOpen}
-          onClick={handleClick}
+          onClick={handleClickToggleMenu}
         >
           {mobileHeaderMenuElementData.map((element) => (
             <MobileHeaderMenuElement
+              key={element.id}
               closeMenu={() => setContactFormModalIsOpen(false)}
               link={element.link}
               id={element.id}
@@ -66,58 +86,6 @@ export const HeaderMobile = () => {
             </a>
           </li>
         </ul>
-        <button
-          onClick={handleClickToggleMenu}
-          className={styles.nav__toggle}
-          aria-expanded="false"
-          aria-controls="menu"
-        >
-          <svg
-            className={styles.menuicon}
-            xmlns="http://www.w3.org/2000/svg"
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-          >
-            <title>Toggle Menu</title>
-            <g>
-              <line
-                className={styles.menuicon__bar}
-                x1="13"
-                y1="16.5"
-                x2="37"
-                y2="16.5"
-              />
-              <line
-                className={styles.menuicon__bar}
-                x1="13"
-                y1="24.5"
-                x2="37"
-                y2="24.5"
-              />
-              <line
-                className={styles.menuicon__bar}
-                x1="13"
-                y1="24.5"
-                x2="37"
-                y2="24.5"
-              />
-              <line
-                className={styles.menuicon__bar}
-                x1="13"
-                y1="32.5"
-                x2="37"
-                y2="32.5"
-              />
-              <circle
-                className={styles.menuicon__circle}
-                r="23"
-                cx="25"
-                cy="25"
-              />
-            </g>
-          </svg>
-        </button>
         <div className={styles.splash}></div>
       </nav>
       <ContactFormModal

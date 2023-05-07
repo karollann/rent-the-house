@@ -15,7 +15,6 @@ import { Gallery } from "@/components/Gallery/Gallery";
 import { Footer } from "@/components/Footer/Footer";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { HeaderMobile } from "@/components/HeaderMobile/HeaderMobile";
-import { LogoMobile } from "@/components/LogoMobile/LogoMobile";
 
 export async function getStaticProps({ locale }: { locale: string }) {
   return {
@@ -49,8 +48,7 @@ export default function Home() {
       </Head>
       <div className="container">
         <Header isAboutInView={inView} />
-        <LogoMobile isAboutInView={inView} />
-        <HeaderMobile />
+        <HeaderMobile isAboutInView={inView} />
         <main className="main">
           <Hero ref={ref} />
           <div className="belowHeroContainer">

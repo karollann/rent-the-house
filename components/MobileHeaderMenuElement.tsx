@@ -21,7 +21,7 @@ export const MobileHeaderMenuElement = ({
 
   const closeAndScroll = (e: MouseEvent<HTMLElement>) => {
     e.preventDefault();
-    closeMenu;
+    closeMenu();
     setTimeout(() => {
       scrolltoId(id);
     }, 500);
