@@ -221,8 +221,7 @@ export const amenityCardData: Amenities = {
     },
     {
       icon: IconCarbonMonoxideDetector,
-      translationKeyName:
-        "amenitiesModal.amenitiesNames.carbonMonoxideDetector",
+      translationKeyName: "amenitiesModal.amenitiesNames.carbonMonoxideAlarm",
     },
     {
       icon: IconFireExtinguisher,
@@ -721,7 +720,7 @@ type MobileHeaderMenuElementDataType = {
 export const mobileHeaderMenuElementData: MobileHeaderMenuElementDataType[] = [
   { link: "#about", translationKey: "header.about", id: "about" },
   { link: "#amenities", translationKey: "header.amenities", id: "amenities" },
-  { link: "#rates", translationKey: "header.rates", id: "rates" },
+  // { link: "#rates", translationKey: "header.rates", id: "rates" },
   { link: "#gallery", translationKey: "header.gallery", id: "gallery" },
   { link: "#reviews", translationKey: "header.reviews", id: "reviews" },
   { link: "#location", translationKey: "header.location", id: "location" },

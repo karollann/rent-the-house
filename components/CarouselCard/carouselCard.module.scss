@@ -26,27 +26,13 @@
   font-weight: 400;
 }
 
-// @media only screen and (max-width: 820px) {
-//   .carouselCard__imgContainer {
-//     z-index: 19;
-//   }
-// }
-
-// @media only screen and (max-width: 980px) {
-//   .projectCard-container {
-//     padding: 100px 0 0 0;
-//   }
-// }
-
-// @media only screen and (max-width: 410px) {
-//   .projectCard__img {
-//     width: 269px;
-//     height: 155px;
-//   }
-// }
-// @media only screen and (max-width: 340px) {
-//   .projectCard__img {
-//     width: 242px;
-//     height: 139px;
-//   }
-// }
+@media only screen and (max-width: 480px) {
+  .carouselCard__imgTitle {
+    padding-top: 6px;
+    font-size: 14px;
+  }
+  .carouselCard__imgDescription {
+    padding-top: 6px;
+    font-size: 12px;
+  }
+}

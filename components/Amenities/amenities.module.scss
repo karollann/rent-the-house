@@ -62,4 +62,74 @@
   }
 }
 
-//
+@media only screen and (max-width: 640px) {
+  .amenities {
+    padding: 32px 32px 0 32px;
+
+    &__heading {
+      text-align: center;
+    }
+
+    &__primaryAmenities {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__text {
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.5;
+      padding-bottom: 24px;
+    }
+
+    &__roomsContainer {
+      padding: 24px 0 0 0;
+    }
+
+    &__roomsContainerHeading {
+      text-align: center;
+    }
+
+    &__displayFirstHeading {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .amenities {
+    &__highlitedAmenities {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__displayFirstList {
+      grid-template-columns: 1fr;
+    }
+  }
+  .amenityCard {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .amenities {
+    &__heading {
+      font-size: 24px;
+    }
+
+    &__roomsContainerHeading {
+      font-size: 20px;
+    }
+
+    &__displayFirstHeading {
+      font-size: 20px;
+    }
+  }
+  .amenityCard {
+    margin: 4px;
+    &__name {
+      font-size: 14px;
+    }
+  }
+}

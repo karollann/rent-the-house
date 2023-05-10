@@ -27,7 +27,7 @@ export const Footer = () => {
   return (
     <footer className={style.footer}>
       <div className={style.footer__content}>
-        <h2 className={style.footer__Heading}>Getaway Lodge</h2>
+        <h2 className={style.footer__heading}>Getaway Lodge</h2>
         <div className={style.footer__linkListContainer}>
           <ul className={style.footer__linksList}>
             <li className={style.footer__listElement}>

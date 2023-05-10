@@ -9,14 +9,14 @@ import { useTranslation } from "next-i18next";
 
 const BREAKPOINTS: Record<string, number> = {
   desktop: 1300,
-  tablet: 815,
+  tablet: 820,
 };
 
 const responsive: ResponsiveType = {
   desktop: {
     breakpoint: { max: 3000, min: BREAKPOINTS.desktop },
     items: 3,
-    slidesToSlide: 3, // optional, default to 1.
+    slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
     breakpoint: { max: BREAKPOINTS.desktop, min: BREAKPOINTS.tablet },
@@ -49,21 +49,21 @@ export const Slider = () => {
     <Carousel
       className={carouselStyles.carouselContainer}
       swipeable={false}
-      draggable={true}
+      draggable={false}
       showDots={false}
       responsive={responsive}
       ssr={false}
-      infinite={false}
-      autoPlay={false}
+      infinite={true}
+      autoPlay={screenSize !== "desktop" ? true : false}
       autoPlaySpeed={screenSize !== "mobile" ? 3000 : 2500}
-      keyBoardControl={true}
+      keyBoardControl={screenSize === "desktop" ? true : false}
       customTransition={
         screenSize !== "mobile"
           ? "transform 1000ms linear"
           : "transform 500ms linear"
       }
       containerClass="carouselContainer"
-      removeArrowOnDeviceType={["mobile"]}
+      removeArrowOnDeviceType={["mobile", "tablet"]}
       deviceType={screenSize}
     >
       {carouselData.map((i) => {

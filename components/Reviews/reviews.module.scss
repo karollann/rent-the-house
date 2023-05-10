@@ -4,6 +4,7 @@
   &__headingContainer {
     display: flex;
     flex-direction: row;
+
     padding-bottom: 24px;
     justify-content: space-between;
   }
@@ -15,4 +16,19 @@
 
 .reviewsCards {
   display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 640px) {
+  .reviews {
+    padding: 64px 32px 0 32px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .reviews {
+    &__heading {
+      font-size: 20px;
+    }
+  }
 }

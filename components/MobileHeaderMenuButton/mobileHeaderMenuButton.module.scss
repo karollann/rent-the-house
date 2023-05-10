@@ -67,5 +67,14 @@
     }
   }
 }
-// mobileHeaderMenuButton_btnMenu__bars__vcvbK
-// mobileHeaderMenuButton_menuOpen__k_Zfq
+
+@media only screen and (max-width: 350px) {
+  .btnMenu {
+    right: 30px;
+    top: 33px;
+
+    &__bars {
+      width: 32px;
+    }
+  }
+}

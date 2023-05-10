@@ -28,11 +28,11 @@ export const Header = ({ isAboutInView }: HeaderPropsType) => {
             {t("header.amenities")}
           </a>
         </li>
-        <li className={styles.header__item}>
+        {/* <li className={styles.header__item}>
           <a href="#" className={styles.header__link}>
             {t("header.rates")}
           </a>
-        </li>
+        </li> */}
         <li className={styles.header__item}>
           <a href="#gallery" className={styles.header__link}>
             {t("header.gallery")}

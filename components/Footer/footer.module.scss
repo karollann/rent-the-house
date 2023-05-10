@@ -12,6 +12,10 @@
     padding-bottom: 24px;
   }
 
+  &__heading {
+    font-size: 24px;
+  }
+
   &__linksList {
     display: flex;
     flex-direction: row;
@@ -25,7 +29,9 @@
 
   &__listElement {
     cursor: pointer;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 4px 8px;
     margin: 0 6px;
     position: relative;
@@ -115,4 +121,78 @@
   transform: translate(-50%, -50%) rotate(45deg);
   background-color: #eeeeee;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 840px) {
+  .footer {
+    &__heading {
+      font-size: 22px;
+    }
+
+    &__listElement {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .footer {
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__linksList {
+      padding-top: 12px;
+    }
+
+    &__listElement {
+      padding: 0px 8px;
+    }
+
+    &__iconsList {
+      padding-top: 12px;
+    }
+
+    &__acknowledgment {
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 640px) {
+  .footer {
+    margin: 0 32px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .footer {
+    &__listElement {
+      padding: 0px 0px;
+      font-size: 12px;
+    }
+  }
+}
+@media only screen and (max-width: 380px) {
+  .footer {
+    &__linksList {
+      flex-direction: column;
+    }
+    &__listElement:not(:first-of-type) {
+      padding-top: 8px;
+    }
+    &__listElement {
+      padding: 4px;
+      margin: 0px;
+    }
+
+    &__iconsList {
+      align-items: center;
+    }
+
+    &__icon {
+      padding: 4px;
+    }
+  }
 }

@@ -73,3 +73,55 @@
     color: var(--color-secondary);
   }
 }
+
+@media only screen and (max-width: 780px) {
+  .modal {
+    &__content {
+      width: 650px;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .modal {
+    &__content {
+      bottom: 40px;
+      width: 500px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .modal {
+    &__content {
+      top: 100px;
+      bottom: 20px;
+      width: 300px;
+      padding: 0 12px 12px;
+    }
+  }
+
+  .modalHeader {
+    padding: 12px 0;
+  }
+
+  .modalTitle {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 0;
+  }
+
+  .amenityGroupContainer {
+    &__heading {
+      font-size: 16px;
+      padding-top: 12px;
+      font-weight: 600;
+    }
+  }
+
+  .amenityCard {
+    &__name {
+      font-size: 14px;
+    }
+  }
+}

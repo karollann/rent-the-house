@@ -35,7 +35,9 @@
       "bathroom": "Bathroom",
       "bedroom": "Bedroom",
       "entertainment": "Entertainment",
+      "heating": "Heating",
       "homeSafety": "Home safety",
+      "outdoor": "Outdoor",
       "kitchenAndDining": "Kitchen and dining",
       "services": "Services",
       "notIncluded": "Not Included"
