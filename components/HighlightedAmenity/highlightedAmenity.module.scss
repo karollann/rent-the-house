@@ -26,20 +26,14 @@
     }
   }
 }
-// @media only screen and (max-width: 580px) {
-//   .amenityBox {
-//     display: flex;
-//     align-items: center;
-//     margin: 4px;
-//     border: solid;
-//     border-width: 0.5px;
-//     border-radius: 24px;
-//     padding: 6px 12px;
+@media only screen and (max-width: 580px) {
+  .amenityBox {
+    align-items: center;
+    justify-content: center;
 
-//     &__name {
-//       padding-left: 12px;
-//       font-weight: 500;
-//       font-size: 12px;
-//     }
-//   }
-// }
+    &__name {
+      font-weight: 500;
+      font-size: 12px;
+    }
+  }
+}
