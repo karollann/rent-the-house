@@ -774,4 +774,5 @@ export const mobileHeaderMenuElementData: MobileHeaderMenuElementDataType[] = [
   { link: "#gallery", translationKey: "header.gallery", id: "gallery" },
   { link: "#reviews", translationKey: "header.reviews", id: "reviews" },
   { link: "#location", translationKey: "header.location", id: "location" },
+  // { translationKey: "header.contact" },
 ];

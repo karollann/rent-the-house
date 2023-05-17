@@ -6,7 +6,6 @@ import styles from "./headerMobile.module.scss";
 import { mobileHeaderMenuElementData } from "@/data";
 import { MobileHeaderMenuElement } from "../MobileHeaderMenuElement";
 import { MobileHeaderMenuButton } from "../MobileHeaderMenuButton/MobileHeaderMenuButton";
-// import { LogoMobile } from "../LogoMobile/LogoMobile";
 
 type HeaderPropsType = { isAboutInView: boolean };
 
@@ -15,6 +14,8 @@ export const HeaderMobile = ({ isAboutInView }: HeaderPropsType) => {
   const [contactFormModalIsOpen, setContactFormModalIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMenuRemoved, setIsMenuRemoved] = useState(true);
+
+  console.log("isMenuOpen", isMenuOpen);
 
   const handleClickToggleMenu = (e: MouseEvent<HTMLElement>) => {
     e.preventDefault();
@@ -28,15 +29,17 @@ export const HeaderMobile = ({ isAboutInView }: HeaderPropsType) => {
       html?.classList.remove("disable-scroll");
     }
 
-    setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
+    setIsMenuOpen((prevIsMenuOpen) => {
+      console.log("prevIsMenuOpen", prevIsMenuOpen);
+
+      return !prevIsMenuOpen;
+    });
   };
 
   const closeMenuAndOpenModal = (e: MouseEvent<HTMLElement>) => {
     e.preventDefault();
-    setIsMenuOpen(false);
-    setTimeout(() => {
-      setContactFormModalIsOpen(true);
-    }, 750);
+    handleClickToggleMenu(e);
+    setContactFormModalIsOpen(true);
   };
 
   const classes = !isAboutInView
@@ -69,21 +72,24 @@ export const HeaderMobile = ({ isAboutInView }: HeaderPropsType) => {
           aria-label="main navigation"
           hidden={!isMenuOpen}
           aria-expanded={isMenuOpen}
-          onClick={handleClickToggleMenu}
         >
           {mobileHeaderMenuElementData.map((element) => (
             <MobileHeaderMenuElement
               key={element.id}
-              closeMenu={() => setContactFormModalIsOpen(false)}
               link={element.link}
               id={element.id}
               translation={t(element.translationKey)}
+              toggleMenu={handleClickToggleMenu}
             />
           ))}
           <li className={styles.nav__item}>
-            <a onClick={closeMenuAndOpenModal} className={styles.nav__link}>
+            <button
+              className={styles.nav__link}
+              id="contact"
+              onClick={closeMenuAndOpenModal}
+            >
               {t("header.contact")}
-            </a>
+            </button>
           </li>
         </ul>
         <div className={styles.splash}></div>

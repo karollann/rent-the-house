@@ -5,13 +5,13 @@ type MobileHeaderMenuElementProps = {
   link: string;
   translation: string;
   id: string;
-  closeMenu: () => void;
+  toggleMenu: (e: MouseEvent<HTMLElement>) => void;
 };
 
 export const MobileHeaderMenuElement = ({
   link,
   translation,
-  closeMenu,
+  toggleMenu,
   id,
 }: MobileHeaderMenuElementProps) => {
   const scrolltoId = (id: string) => {
@@ -21,7 +21,7 @@ export const MobileHeaderMenuElement = ({
 
   const closeAndScroll = (e: MouseEvent<HTMLElement>) => {
     e.preventDefault();
-    closeMenu();
+    toggleMenu(e);
     setTimeout(() => {
       scrolltoId(id);
     }, 500);
